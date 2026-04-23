@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin — AC-Consulting</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    body { background: var(--bg); }
+    .login-wrap {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+    .login-box {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 48px 40px;
+      width: 100%;
+      max-width: 400px;
+      backdrop-filter: blur(10px);
+    }
+    .login-box h1 {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+    .login-box p { color: var(--text-muted); margin-bottom: 32px; font-size: 0.9rem; }
+    .admin-header {
+      background: rgba(10,10,15,0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    #adminPanel { display: none; }
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 20px;
+      margin-bottom: 32px;
+    }
+    .stat-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      text-align: center;
+    }
+    .stat-num {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .stat-label { font-size: 0.85rem; color: var(--text-muted); margin-top: 4px; }
+    .table-wrap {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: auto;
+    }
+    .btn-sm {
+      padding: 8px 18px;
+      font-size: 0.85rem;
+      border-radius: 8px;
+    }
+    #loginError { color: #f87171; font-size: 0.88rem; margin-top: 12px; display: none; }
+  </style>
+</head>
+<body>
+
+  <!-- LOGIN -->
+  <div class="login-wrap" id="loginPanel">
+    <div class="login-box">
+      <div style="margin-bottom:24px;">
+        <a href="../index.html" class="logo"><span class="logo-mark">A</span><span class="logo-text">C-Consulting</span></a>
+      </div>
+      <h1>Panel Admin</h1>
+      <p>Acceso restringido al equipo AC-Consulting.</p>
+      <div class="form-group">
+        <label>Usuario</label>
+        <input type="text" id="adminUser" placeholder="admin" />
+      </div>
+      <div class="form-group">
+        <label>Contraseña</label>
+        <input type="password" id="adminPass" placeholder="••••••••" onkeydown="if(event.key==='Enter')doLogin()" />
+      </div>
+      <button class="btn btn-primary" style="width:100%;justify-content:center;" onclick="doLogin()">Ingresar</button>
+      <div id="loginError">Usuario o contraseña incorrectos.</div>
+    </div>
+  </div>
+
+  <!-- ADMIN PANEL -->
+  <div id="adminPanel">
+    <div class="admin-header">
+      <a href="../index.html" class="logo"><span class="logo-mark">A</span><span class="logo-text">C-Consulting</span></a>
+      <div style="display:flex;gap:12px;align-items:center;">
+        <span style="color:var(--text-muted);font-size:0.85rem;">Panel de Administración</span>
+        <button class="btn btn-ghost btn-sm" onclick="doLogout()">Cerrar sesión</button>
+      </div>
+    </div>
+
+    <div class="admin-wrap">
+      <div class="container">
+        <div style="margin-bottom:32px;">
+          <p class="section-label">Dashboard</p>
+          <h2 class="section-title">Clientes <em>registrados</em></h2>
+        </div>
+
+        <div class="stat-grid" id="statGrid">
+          <div class="stat-card"><div class="stat-num" id="statTotal">—</div><div class="stat-label">Total registros</div></div>
+          <div class="stat-card"><div class="stat-num" id="statToday">—</div><div class="stat-label">Hoy</div></div>
+          <div class="stat-card"><div class="stat-num" id="statWeek">—</div><div class="stat-label">Esta semana</div></div>
+        </div>
+
+        <div class="admin-filters">
+          <input type="text" id="filterName" placeholder="Buscar por nombre..." oninput="filterTable()" />
+          <input type="email" id="filterEmail" placeholder="Buscar por correo..." oninput="filterTable()" />
+          <button class="btn btn-primary btn-sm" onclick="loadClients()">↺ Actualizar</button>
+          <button class="btn btn-ghost btn-sm" onclick="exportCSV()">⬇ Exportar CSV</button>
+        </div>
+
+        <div class="table-wrap">
+          <table class="admin-table" id="adminTable">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Correo</th>
+                <th>Teléfono</th>
+                <th>Mensaje</th>
+                <th>Fecha</th>
+              </tr>
+            </thead>
+            <tbody id="adminTbody">
+              <tr><td colspan="7" style="text-align:center;padding:40px;color:var(--text-muted);">Cargando datos...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../scripts.js"></script>
+  <script>
+    // Credenciales (en producción usar sesión PHP)
+    const ADMIN_USER = 'admin';
+    const ADMIN_PASS = 'techmind2025';
+
+    function doLogin() {
+      const u = document.getElementById('adminUser').value;
+      const p = document.getElementById('adminPass').value;
+      if (u === ADMIN_USER && p === ADMIN_PASS) {
+        sessionStorage.setItem('tm_admin', '1');
+        document.getElementById('loginPanel').style.display = 'none';
+        document.getElementById('adminPanel').style.display = 'block';
+        loadClients();
+      } else {
+        document.getElementById('loginError').style.display = 'block';
+      }
+    }
+
+    function doLogout() {
+      sessionStorage.removeItem('tm_admin');
+      location.reload();
+    }
+
+    async function loadClients() {
+      try {
+        const res = await fetch('api.php?action=list');
+        const data = await res.json();
+        if (!data.success) throw new Error(data.message);
+        renderTable(data.clients);
+        renderStats(data.clients);
+      } catch (e) {
+        document.getElementById('adminTbody').innerHTML =
+          `<tr><td colspan="7" style="text-align:center;padding:40px;color:#f87171;">Error: ${e.message}</td></tr>`;
+      }
+    }
+
+    function renderTable(clients) {
+      const tbody = document.getElementById('adminTbody');
+      if (!clients.length) {
+        tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;padding:40px;color:var(--text-muted);">No hay registros aún.</td></tr>';
+        return;
+      }
+      tbody.innerHTML = clients.map(c => `
+        <tr>
+          <td>${c.id}</td>
+          <td>${c.nombres}</td>
+          <td>${c.apellidos}</td>
+          <td>${c.correo}</td>
+          <td>${c.telefono}</td>
+          <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${c.mensaje}">${c.mensaje}</td>
+          <td>${c.created_at ? new Date(c.created_at).toLocaleDateString('es-CO') : '—'}</td>
+        </tr>
+      `).join('');
+    }
+
+    function renderStats(clients) {
+      document.getElementById('statTotal').textContent = clients.length;
+      const today = new Date().toDateString();
+      const weekAgo = Date.now() - 7*24*3600*1000;
+      document.getElementById('statToday').textContent = clients.filter(c => new Date(c.created_at).toDateString() === today).length;
+      document.getElementById('statWeek').textContent = clients.filter(c => new Date(c.created_at) > weekAgo).length;
+    }
+
+    // Auto-login si ya estaba logueado
+    if (sessionStorage.getItem('tm_admin')) {
+      document.getElementById('loginPanel').style.display = 'none';
+      document.getElementById('adminPanel').style.display = 'block';
+      loadClients();
+    }
+  </script>
+</body>
+</html>
