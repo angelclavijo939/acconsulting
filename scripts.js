@@ -179,7 +179,7 @@ if (contactForm) {
     }
 
     try {
-      const res = await fetch('../backend/contact.php', {
+      const res = await fetch('/api/save_contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
