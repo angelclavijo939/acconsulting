@@ -20,11 +20,11 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 // ── Configuración BD (Neon/Vercel PostgreSQL) ──
-$DB_HOST     = getenv('PGHOST')     ?: 'ep-xxx.us-east-1.aws.neon.tech';
+$DB_HOST     = getenv('PGHOST')     ?: 'ep-old-rain-anx76mf7-pooler.c-6.us-east-1.aws.neon.tech';
 $DB_PORT     = getenv('PGPORT')     ?: '5432';
 $DB_NAME     = getenv('PGDATABASE') ?: 'maindb';
-$DB_USER     = getenv('PGUSER')     ?: 'techmind_user';
-$DB_PASSWORD = getenv('PGPASSWORD') ?: 'YOUR_PASSWORD_HERE';
+$DB_USER     = getenv('PGUSER')     ?: 'neondb_owner';
+$DB_PASSWORD = getenv('PGPASSWORD') ?: 'npg_5xpTMBZqg3sj';
 $DB_SSL      = 'require';
 
 // Email de notificación
