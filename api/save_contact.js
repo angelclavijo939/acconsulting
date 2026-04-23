@@ -1,17 +1,20 @@
-// api/save_contact.js — Vercel Serverless Function (Node.js CommonJS)
-// Variables de entorno requeridas en Vercel:
-// PGHOST, PGDATABASE, PGUSER, PGPASSWORD, PGPORT (opcional)
-
+// api/save_contact.js — Vercel Serverless Function
 const { Pool } = require('pg');
 
-const pool = new Pool({
-  host:     process.env.PGHOST,
-  port:     parseInt(process.env.PGPORT || '5432'),
-  database: process.env.PGDATABASE || 'maindb',
-  user:     process.env.PGUSER,
-  password: process.env.PGPASSWORD,
-  ssl:      { rejectUnauthorized: false },
-});
+// Soporta tanto DATABASE_URL como variables separadas
+const pool = process.env.DATABASE_URL
+  ? new Pool({
+      connectionString: process.env.DATABASE_URL,
+      ssl: { rejectUnauthorized: false },
+    })
+  : new Pool({
+      host:     process.env.DB_HOST     || process.env.PGHOST,
+      port:     parseInt(process.env.DB_PORT || process.env.PGPORT || '5432'),
+      database: process.env.DB_NAME     || process.env.PGDATABASE || 'maindb',
+      user:     process.env.DB_USER     || process.env.PGUSER,
+      password: process.env.DB_PASS     || process.env.PGPASSWORD,
+      ssl: { rejectUnauthorized: false },
+    });
 
 module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
