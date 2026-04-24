@@ -1,12 +1,4 @@
-import { MetadataRoute } from 'next'
+User-agent: *
+Allow: /
 
-export default function robots(): MetadataRoute.Robots {
-  return {
-    rules: {
-      userAgent: '*',
-      allow: '/',
-      disallow: '/admin/',
-    },
-    sitemap: 'https://ac-consulting.cloud/sitemap.xml',
-  }
-}
+Sitemap: https://ac-consulting.cloud/sitemap.xml
