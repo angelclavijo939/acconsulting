@@ -1,7 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /admin/
-Disallow: /backend/
-Disallow: /api/
-
-Sitemap: https://ac-consulting.cloud/sitemap.xml
