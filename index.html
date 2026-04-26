@@ -3,31 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AC-Consulting — Proyectos · Marketing Digital · IA</title>
-
-  <!-- SEO básico -->
-  <meta name="description" content="AC-Consulting: proyectos digitales, marketing digital e inteligencia artificial para impulsar tu negocio. +10 años de experiencia en tecnología." />
+  <title>Desarrollo Web, IA y Marketing Digital en Colombia | AC-Consulting</title>
+  <meta name="description" content="AC-Consulting: expertos en desarrollo web, inteligencia artificial y marketing digital en Colombia. Más de 10 años transformando ideas en soluciones digitales. Solicita tu cotización." />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://ac-consulting.cloud/" />
+  <meta name="author" content="Ángel Clavijo — AC-Consulting" />
+  <link rel="canonical" href="https://ac-consulting.net/index.html" />
 
-  <!-- Open Graph (WhatsApp, LinkedIn, redes sociales) -->
-  <meta property="og:title" content="AC-Consulting — Proyectos · Marketing Digital · IA" />
-  <meta property="og:description" content="Transformamos ideas en proyectos digitales, marketing y soluciones de IA que impulsan tu negocio." />
-  <meta property="og:url" content="https://ac-consulting.cloud/" />
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:locale" content="es_CO" />
+  <meta property="og:title" content="Desarrollo Web, IA y Marketing Digital en Colombia | AC-Consulting" />
+  <meta property="og:description" content="Expertos en desarrollo web, inteligencia artificial y marketing digital. Más de 10 años transformando negocios en Colombia y Latinoamérica." />
+  <meta property="og:url" content="https://ac-consulting.net/" />
+  <meta property="og:site_name" content="AC-Consulting" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=1200&h=630&fit=crop" />
 
-  <!-- Schema.org (datos estructurados) -->
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Desarrollo Web, IA y Marketing Digital en Colombia | AC-Consulting" />
+  <meta name="twitter:description" content="Expertos en desarrollo web, IA y marketing digital en Colombia. +10 años de experiencia." />
+
+  <!-- Schema JSON-LD: ProfessionalService -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "AC-Consulting",
-    "url": "https://ac-consulting.cloud",
-    "description": "Proyectos digitales, marketing digital e inteligencia artificial",
-    "founder": "Ángel Clavijo",
-    "areaServed": ["Colombia", "Latinoamérica", "Estados Unidos"],
-    "serviceType": ["Diseño Web", "Desarrollo de Software", "Marketing Digital", "Inteligencia Artificial"]
+    "url": "https://ac-consulting.net",
+    "logo": "https://ac-consulting.net/logo.png",
+    "description": "Empresa colombiana especializada en desarrollo web, inteligencia artificial, marketing digital y consultoría tecnológica.",
+    "founder": { "@type": "Person", "name": "Ángel Clavijo" },
+    "foundingDate": "2014",
+    "areaServed": ["Colombia", "Latinoamérica"],
+    "address": { "@type": "PostalAddress", "addressCountry": "CO" },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "email": "angel.clavijo@yahoo.es",
+      "availableLanguage": ["Spanish"]
+    },
+    "sameAs": [],
+    "serviceType": ["Desarrollo Web", "Inteligencia Artificial", "Marketing Digital", "Diseño UI/UX", "Consultoría Tecnológica"]
+  }
+  </script>
+
+  <!-- Schema JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cuánto tiempo tarda en desarrollarse un proyecto web?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Un sitio corporativo tarda entre 2-4 semanas. Proyectos con integraciones de IA o e-commerce pueden tomar de 6-12 semanas." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Trabajan con empresas fuera de Colombia?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí, trabajamos con clientes en toda Latinoamérica, Estados Unidos y Europa de forma 100% remota." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué tecnologías de IA utilizan?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Trabajamos con OpenAI (GPT-4), Anthropic (Claude), modelos open-source como LLaMA, y frameworks como LangChain y LlamaIndex." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Ofrecen soporte después de la entrega del proyecto?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí, ofrecemos planes de mantenimiento mensual con actualizaciones de seguridad, monitoreo y soporte técnico 24/7." }
+      }
+    ]
   }
   </script>
 
@@ -207,7 +252,7 @@
           <p>Más de una década construyendo soluciones tecnológicas de alto impacto para empresas de todos los tamaños.</p>
         </div>
         <div class="porque-card reveal">
-          <div class="porque-num">200+</div>
+          <div class="porque-num">150+</div>
           <h3>Proyectos entregados</h3>
           <p>Cada proyecto es único. Nos enorgullece un portafolio diverso y resultados demostrables en cada entrega.</p>
         </div>
@@ -231,7 +276,7 @@
       <p class="section-label">Últimos artículos</p>
       <h2 class="section-title">Nuestro <em>Blog</em></h2>
       <div class="blog-grid">
-        <article class="blog-card reveal">
+        <article class="blog-card reveal" itemscope itemtype="https://schema.org/BlogPosting">
           <div class="blog-img">
             <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?q=80&w=600&auto=format&fit=crop" alt="IA en 2025" loading="lazy" />
           </div>
@@ -246,7 +291,7 @@
             </div>
           </div>
         </article>
-        <article class="blog-card reveal">
+        <article class="blog-card reveal" itemscope itemtype="https://schema.org/BlogPosting">
           <div class="blog-img">
             <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=600&auto=format&fit=crop" alt="SEO técnico" loading="lazy" />
           </div>
@@ -261,7 +306,7 @@
             </div>
           </div>
         </article>
-        <article class="blog-card reveal">
+        <article class="blog-card reveal" itemscope itemtype="https://schema.org/BlogPosting">
           <div class="blog-img">
             <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop" alt="Automatización" loading="lazy" />
           </div>
@@ -327,7 +372,7 @@
             <a href="#" aria-label="LinkedIn">in</a>
             <a href="#" aria-label="Twitter">𝕏</a>
             <a href="#" aria-label="Instagram">⊕</a>
-            <a href="https://github.com/angelclavijo939" aria-label="GitHub">⌥</a>
+            <a href="#" aria-label="GitHub">⌥</a>
           </div>
         </div>
         <div class="footer-links">
@@ -361,7 +406,7 @@
   </footer>
 
   <!-- WhatsApp flotante -->
-  <a class="wa-float" id="waFloat" href="https://wa.me/57TUNUMERO" target="_blank" aria-label="WhatsApp">
+  <a class="wa-float" id="waFloat" href="#" target="_blank" aria-label="WhatsApp">
     <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 
