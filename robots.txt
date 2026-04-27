@@ -4,4 +4,14 @@ Disallow: /admin/
 Disallow: /backend/
 Disallow: /api/
 
-Sitemap: https://ac-consulting.cloud/sitemap.xml
+Sitemap: https://www.ac-consulting.cloud/sitemap.xml
+
+# AI crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /

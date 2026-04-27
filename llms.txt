@@ -1,0 +1,25 @@
+# AC-Consulting
+> Empresa de tecnología especializada en desarrollo web, inteligencia artificial y marketing digital en Colombia.
+
+## Servicios
+
+- [Diseño Web](https://www.ac-consulting.cloud/servicios/diseno-web.html): Diseño UI/UX profesional en WordPress, Webflow y Shopify.
+- [Desarrollo de Software](https://www.ac-consulting.cloud/servicios/desarrollo-software.html): Soluciones en Python, JavaScript, APIs REST y aplicaciones web.
+- [Servicios de IA](https://www.ac-consulting.cloud/servicios/servicios-ia.html): Chatbots con GPT-4 y Claude, integraciones y fine-tuning de modelos.
+- [Marketing Digital](https://www.ac-consulting.cloud/servicios/marketing-digital.html): SEO, redes sociales y campañas SEM para Colombia y Latinoamérica.
+- [Escritura y Traducción](https://www.ac-consulting.cloud/servicios/escritura-traduccion.html): Traducción profesional español-inglés y transcripción.
+- [Consultoría de Negocios](https://www.ac-consulting.cloud/servicios/negocios.html): Business Intelligence y gestión de proyectos ágiles.
+
+## Fundador
+
+Ángel Clavijo — más de 10 años de experiencia en tecnología digital. Bogotá, Colombia.
+
+## Contacto
+
+- Email: angel.clavijo@yahoo.es
+- Web: https://www.ac-consulting.cloud
+- Área de servicio: Colombia, Latinoamérica, Estados Unidos
+
+## Contenido autorizado para indexación por IA
+
+Las páginas de servicios, el blog y la página de inicio están autorizadas para indexación y uso en respuestas de modelos de lenguaje.
