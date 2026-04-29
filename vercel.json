@@ -1,17 +1,10 @@
 {
-  "version": 2,
   "redirects": [
     {
-      "source": "/(.*)",
-      "has": [{ "type": "host", "value": "ac-consulting.cloud" }],
-      "destination": "https://www.ac-consulting.cloud/$1",
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.ac-consulting.cloud" }],
+      "destination": "https://ac-consulting.cloud/:path*",
       "permanent": true
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/save_contact",
-      "dest": "/api/save_contact.js"
     }
   ]
 }
