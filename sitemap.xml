@@ -58,4 +58,26 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Blog posts -->
+  <url>
+    <loc>https://ac-consulting.cloud/blog/futuro-ia-generativa-negocios-2025.html</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://ac-consulting.cloud/blog/seo-tecnico-triplicar-trafico-organico-90-dias.html</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://ac-consulting.cloud/blog/automatizacion-inteligente-ahorra-20-horas-semanales.html</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
