@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEO técnico: cómo triplicar el tráfico orgánico en 90 días | AC-Consulting</title>
+  <meta name="description" content="Guía práctica de SEO técnico para triplicar el tráfico orgánico en 90 días: robots.txt, sitemap, Core Web Vitals, schema markup y estrategia de contenido para empresas colombianas." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ac-consulting.cloud/blog/seo-tecnico-triplicar-trafico-organico-90-dias.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="SEO técnico: cómo triplicar el tráfico orgánico en 90 días" />
+  <meta property="og:description" content="Guía práctica de SEO técnico: robots.txt, sitemap, Core Web Vitals, schema markup y estrategia de contenido para multiplicar tu tráfico orgánico." />
+  <meta property="og:url" content="https://ac-consulting.cloud/blog/seo-tecnico-triplicar-trafico-organico-90-dias.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="es_CO" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=1200&auto=format&fit=crop" />
+
+  <!-- Schema BlogPosting -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "SEO técnico: cómo triplicar el tráfico orgánico en 90 días",
+    "description": "Guía práctica de SEO técnico para triplicar el tráfico orgánico en 90 días: robots.txt, sitemap, Core Web Vitals, schema markup y estrategia de contenido.",
+    "image": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=1200&auto=format&fit=crop",
+    "datePublished": "2025-02-20",
+    "dateModified": "2026-04-29",
+    "author": {
+      "@type": "Person",
+      "name": "Ángel Clavijo",
+      "jobTitle": "Fundador y Consultor Senior",
+      "worksFor": { "@type": "Organization", "name": "AC-Consulting" }
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "AC-Consulting",
+      "url": "https://ac-consulting.cloud"
+    },
+    "mainEntityOfPage": "https://ac-consulting.cloud/blog/seo-tecnico-triplicar-trafico-organico-90-dias.html"
+  }
+  </script>
+
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    .blog-post-hero {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      display: block;
+    }
+    .blog-post-wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 60px 24px 100px;
+    }
+    .post-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--accent, #c9a96e);
+      margin-bottom: 16px;
+      display: block;
+    }
+    .post-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      color: var(--heading, #0f0e0c);
+    }
+    .post-meta {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 0.88rem;
+      color: var(--muted, #888);
+      margin-bottom: 48px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border, #eee);
+      flex-wrap: wrap;
+    }
+    .post-meta .author { font-weight: 600; color: var(--text, #333); }
+    .post-content h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.9rem;
+      font-weight: 700;
+      margin: 48px 0 16px;
+      color: var(--heading, #0f0e0c);
+    }
+    .post-content h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin: 32px 0 12px;
+      color: var(--heading, #0f0e0c);
+    }
+    .post-content p {
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: var(--text, #444);
+      margin-bottom: 20px;
+    }
+    .post-content ul, .post-content ol {
+      margin: 0 0 20px 24px;
+      line-height: 1.85;
+      color: var(--text, #444);
+      font-size: 1.05rem;
+    }
+    .post-content li { margin-bottom: 8px; }
+    .post-content strong { color: var(--heading, #0f0e0c); }
+    .post-highlight {
+      background: var(--surface, #f8f5f0);
+      border-left: 4px solid var(--accent, #c9a96e);
+      padding: 20px 24px;
+      border-radius: 0 8px 8px 0;
+      margin: 32px 0;
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--text, #444);
+    }
+    .post-content code {
+      background: var(--surface, #f8f5f0);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.92rem;
+      font-family: 'Courier New', monospace;
+      color: var(--heading, #0f0e0c);
+    }
+    .checklist { list-style: none; margin-left: 0 !important; }
+    .checklist li::before { content: "✓ "; color: var(--accent, #c9a96e); font-weight: 700; }
+    .post-cta {
+      background: var(--surface, #f8f5f0);
+      border: 1px solid var(--border, #eee);
+      border-radius: 14px;
+      padding: 36px;
+      text-align: center;
+      margin-top: 64px;
+    }
+    .post-cta h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.7rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .post-cta p { font-size: 0.98rem; margin-bottom: 20px; }
+    .breadcrumb {
+      font-size: 0.85rem;
+      color: var(--muted, #888);
+      margin-bottom: 12px;
+    }
+    .breadcrumb a { color: var(--accent, #c9a96e); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .tag-list { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+    .tag {
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 3px 12px;
+      border-radius: 20px;
+      background: var(--surface, #f8f5f0);
+      border: 1px solid var(--border, #eee);
+      color: var(--muted, #888);
+      letter-spacing: .04em;
+    }
+    .phase-box {
+      border: 1px solid var(--border, #eee);
+      border-radius: 12px;
+      padding: 24px;
+      margin: 24px 0;
+    }
+    .phase-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--accent, #c9a96e);
+      margin-bottom: 8px;
+    }
+    .phase-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: var(--heading, #0f0e0c);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark">A</span><span class="logo-text">C-Consulting</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="../index.html" class="nav-link">Inicio</a>
+        <a href="../index.html#servicios" class="nav-link">Servicios</a>
+        <a href="../index.html#quien-soy" class="nav-link">Quién soy</a>
+        <a href="../index.html#blog" class="nav-link active">Blog</a>
+        <a href="../contacto.html" class="nav-link nav-cta">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO IMAGE -->
+  <img
+    class="blog-post-hero"
+    src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=1400&auto=format&fit=crop"
+    alt="SEO técnico para triplicar tráfico orgánico"
+    fetchpriority="high"
+  />
+
+  <!-- CONTENT -->
+  <main class="blog-post-wrap">
+
+    <div class="breadcrumb">
+      <a href="../index.html">Inicio</a> → <a href="../index.html#blog">Blog</a> → SEO técnico
+    </div>
+
+    <div class="tag-list">
+      <span class="tag">SEO</span>
+      <span class="tag">Marketing Digital</span>
+      <span class="tag">Colombia</span>
+    </div>
+
+    <span class="post-label">Marketing Digital · 10 min de lectura</span>
+    <h1 class="post-title">SEO técnico: cómo triplicar el tráfico orgánico en 90 días</h1>
+
+    <div class="post-meta">
+      <span class="author">Por Ángel Clavijo</span>
+      <span>20 de febrero, 2025</span>
+      <span>Actualizado: abril 2026</span>
+    </div>
+
+    <div class="post-content">
+
+      <p>El SEO técnico es el cimiento invisible sobre el que se construye todo el tráfico orgánico. Puedes tener el mejor contenido del sector y la estrategia de keywords más refinada, pero si Google no puede rastrear e indexar tu sitio correctamente, ese esfuerzo es irrelevante. En este artículo te mostramos el proceso exacto que aplicamos en AC-Consulting para triplicar el tráfico orgánico de nuestros clientes en 90 días.</p>
+
+      <p>No es magia: es una secuencia de correcciones técnicas prioritarias, seguida de optimizaciones on-page y una estrategia de contenido orientada a intención de búsqueda. Lo hemos aplicado en sitios de startups colombianas, e-commerce y agencias de servicios con resultados consistentes.</p>
+
+      <h2>Por qué el SEO técnico va primero</h2>
+
+      <p>Un error común es empezar el SEO por el contenido. La lógica parece correcta: más contenido = más keywords = más tráfico. Pero si el sitio tiene problemas técnicos de rastreo, ese contenido nunca llega a indexarse correctamente.</p>
+
+      <p>El SEO técnico garantiza que Google pueda <strong>encontrar, entender y valorar</strong> tu sitio. Una vez que esa base está sólida, cada pieza de contenido que publiques tiene un impacto multiplicado.</p>
+
+      <div class="post-highlight">
+        En uno de nuestros proyectos recientes, corregir únicamente los problemas técnicos de un sitio —sin tocar el contenido— generó un incremento del 47% en impresiones en Search Console en las primeras 4 semanas.
+      </div>
+
+      <h2>El plan de 90 días</h2>
+
+      <div class="phase-box">
+        <div class="phase-label">Días 1–30</div>
+        <div class="phase-title">Fase 1: Fundamentos técnicos</div>
+        <ul class="checklist">
+          <li>Configurar Google Search Console y Google Analytics 4</li>
+          <li>Crear y enviar <code>robots.txt</code> con referencia al sitemap</li>
+          <li>Generar <code>sitemap.xml</code> con todas las URLs indexables</li>
+          <li>Auditar y corregir errores 404 y redirecciones rotas</li>
+          <li>Implementar HTTPS en todas las páginas sin contenido mixto</li>
+          <li>Verificar canonicals en todas las páginas clave</li>
+          <li>Corregir etiquetas <code>noindex</code> accidentales</li>
+          <li>Configurar redirects 301 www → non-www (o viceversa)</li>
+        </ul>
+      </div>
+
+      <div class="phase-box">
+        <div class="phase-label">Días 31–60</div>
+        <div class="phase-title">Fase 2: On-page y Core Web Vitals</div>
+        <ul class="checklist">
+          <li>Optimizar title tags con keyword principal en los primeros 60 caracteres</li>
+          <li>Escribir meta descriptions únicas de 150-160 caracteres por página</li>
+          <li>Revisar estructura H1/H2/H3 — un H1 por página con keyword</li>
+          <li>Implementar schema JSON-LD: Organization, Service, FAQPage, BreadcrumbList</li>
+          <li>Optimizar imágenes: WebP, lazy loading, alt text descriptivo</li>
+          <li>Mejorar LCP (Largest Contentful Paint) a menos de 2.5s</li>
+          <li>Reducir CLS (Cumulative Layout Shift) a menos de 0.1</li>
+          <li>Mejorar INP (Interaction to Next Paint) a menos de 200ms</li>
+        </ul>
+      </div>
+
+      <div class="phase-box">
+        <div class="phase-label">Días 61–90</div>
+        <div class="phase-title">Fase 3: Contenido y autoridad</div>
+        <ul class="checklist">
+          <li>Publicar 4-6 artículos de blog orientados a keywords de baja-media competencia</li>
+          <li>Crear o expandir páginas de servicio a mínimo 800 palabras</li>
+          <li>Implementar enlazado interno estratégico entre páginas relacionadas</li>
+          <li>Publicar en directorios locales (Google Business Profile, Yelp Colombia)</li>
+          <li>Conseguir 3-5 backlinks desde medios o directorios sectoriales</li>
+          <li>Monitorear posiciones semanalmente y ajustar estrategia</li>
+        </ul>
+      </div>
+
+      <h2>Los errores técnicos más comunes que encontramos</h2>
+
+      <h3>1. robots.txt bloqueando páginas importantes</h3>
+      <p>Es más frecuente de lo que parece. Una directiva <code>Disallow: /</code> mal colocada puede bloquear el rastreo de todo el sitio. Siempre verificar que el robots.txt permita el acceso a las páginas que quieres indexar.</p>
+
+      <h3>2. Sitemap con URLs no canonicales</h3>
+      <p>El sitemap debe contener solo las URLs canónicas y accesibles. Incluir URLs con parámetros, versiones HTTP, o páginas con <code>noindex</code> confunde al crawler y desperdicia presupuesto de rastreo.</p>
+
+      <h3>3. Contenido duplicado sin canonical</h3>
+      <p>Páginas accesibles desde múltiples URLs (<code>/servicios</code> y <code>/servicios/</code>, versión HTTP y HTTPS) sin etiqueta canonical generan canibalización de keywords y dilución de autoridad.</p>
+
+      <h3>4. Imágenes sin alt text</h3>
+      <p>Las imágenes son invisibles para Google sin alt text descriptivo. Además de SEO, el alt text es fundamental para accesibilidad, lo que también es una señal positiva para el algoritmo.</p>
+
+      <h3>5. Title tags duplicados o genéricos</h3>
+      <p>Cada página debe tener un title único que describa su contenido específico. "Inicio — Empresa" o "Servicios" son oportunidades perdidas de incluir keywords valiosas.</p>
+
+      <h2>Core Web Vitals: el factor técnico que más impacta</h2>
+
+      <p>Desde 2021, los Core Web Vitals son un factor de ranking oficial de Google. Las tres métricas que debes dominar son:</p>
+
+      <ul>
+        <li><strong>LCP (Largest Contentful Paint):</strong> Tiempo hasta que el elemento visual más grande carga. Objetivo: menos de 2.5 segundos. La principal causa de LCP alto son imágenes no optimizadas o servidores lentos.</li>
+        <li><strong>INP (Interaction to Next Paint):</strong> Reemplazó a FID en 2024. Mide la respuesta a interacciones del usuario. Objetivo: menos de 200ms. JavaScript bloqueante es el principal culpable.</li>
+        <li><strong>CLS (Cumulative Layout Shift):</strong> Mide la estabilidad visual. Objetivo: menos de 0.1. Las imágenes sin dimensiones declaradas y los anuncios de carga tardía son los causantes más frecuentes.</li>
+      </ul>
+
+      <p>Puedes medir estas métricas con PageSpeed Insights (datos de laboratorio) y Google Search Console (datos de campo reales de usuarios).</p>
+
+      <h2>Schema markup: el multiplicador de visibilidad</h2>
+
+      <p>El schema markup en JSON-LD le dice a Google exactamente qué tipo de contenido contiene cada página. El resultado son los "rich results" — snippets enriquecidos con estrellas, preguntas y respuestas, información de negocio — que aumentan significativamente el CTR en los resultados de búsqueda.</p>
+
+      <p>Para una agencia de servicios en Colombia, los schemas más valiosos son:</p>
+
+      <ul>
+        <li><strong>Organization + LocalBusiness:</strong> Nombre, dirección, email, área de servicio</li>
+        <li><strong>ProfessionalService:</strong> Tipos de servicio específicos</li>
+        <li><strong>BreadcrumbList:</strong> Jerarquía de navegación visible en SERPs</li>
+        <li><strong>BlogPosting:</strong> Para cada artículo del blog con autor y fechas</li>
+      </ul>
+
+      <div class="post-highlight">
+        Después de implementar schema markup completo en un cliente del sector servicios, el CTR promedio en Search Console aumentó del 2.1% al 4.8% en 45 días, sin cambios en las posiciones. Más visibilidad, misma posición.
+      </div>
+
+      <h2>Midiendo el éxito</h2>
+
+      <p>Las métricas que monitoreamos semanalmente durante los 90 días son:</p>
+
+      <ul>
+        <li>Páginas indexadas en Search Console (debe crecer)</li>
+        <li>Impresiones orgánicas totales (semana a semana)</li>
+        <li>Posición promedio de las keywords objetivo</li>
+        <li>CTR promedio (impacto del schema y las meta descriptions)</li>
+        <li>Tráfico orgánico en GA4 y tasa de conversión asociada</li>
+        <li>Core Web Vitals en el reporte de Search Console</li>
+      </ul>
+
+      <p>El tráfico orgánico no se triplica de la noche a la mañana — Google tarda semanas en re-indexar cambios. Pero con este proceso, los primeros incrementos significativos son visibles alrededor de la semana 6-8, y el salto más importante ocurre entre los días 75-90.</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta">
+      <h3>¿Quieres aplicar este proceso en tu sitio?</h3>
+      <p>Hacemos auditorías SEO técnicas completas con plan de acción priorizado. Contáctanos y cuéntanos tu caso.</p>
+      <a href="../contacto.html" class="btn btn-primary">Solicitar auditoría SEO</a>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo logo-footer">
+            <span class="logo-mark">A</span><span class="logo-text">C-Consulting</span>
+          </a>
+          <p>Transformamos ideas en soluciones digitales que generan resultados reales.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="Instagram">⊕</a>
+            <a href="https://github.com/angelclavijo939" aria-label="GitHub">⌥</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Enlaces rápidos</h4>
+          <a href="#">Políticas de privacidad</a>
+          <a href="../index.html#blog">Blog</a>
+          <a href="#">Soporte técnico</a>
+          <a href="../contacto.html">Contacto</a>
+        </div>
+        <div class="footer-links">
+          <h4>Servicios</h4>
+          <a href="../servicios/diseno-web.html">Diseño Web</a>
+          <a href="../servicios/desarrollo-software.html">Desarrollo</a>
+          <a href="../servicios/servicios-ia.html">Inteligencia Artificial</a>
+          <a href="../servicios/marketing-digital.html">Marketing Digital</a>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Recibe artículos y novedades en tecnología e IA.</p>
+          <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+            <input type="email" placeholder="tu@email.com" required />
+            <button type="submit" class="btn btn-primary">Suscribir</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 AC-Consulting. Todos los derechos reservados.</p>
+        <p>Contacto legal: <a href="mailto:hola@ac-consulting.cloud">hola@ac-consulting.cloud</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" id="waFloat" href="https://wa.me/57TUNUMERO" target="_blank" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="../scripts.js"></script>
+</body>
+</html>
