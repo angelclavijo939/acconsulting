@@ -1,44 +1,10 @@
 {
-  "buildCommand": "echo 'Static HTML deployment'",
-  "outputDirectory": "./",
-  "cleanUrls": false,
-  "trailingSlash": false,
-  "headers": [
+  "redirects": [
     {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=3600, s-maxage=3600"
-        }
-      ]
-    },
-    {
-      "source": "/robots.txt",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "text/plain; charset=utf-8"
-        }
-      ]
-    },
-    {
-      "source": "/sitemap.xml",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/xml; charset=utf-8"
-        }
-      ]
-    },
-    {
-      "source": "/llms.txt",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "text/plain; charset=utf-8"
-        }
-      ]
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.ac-consulting.cloud" }],
+      "destination": "https://ac-consulting.cloud/:path*",
+      "permanent": true
     }
   ]
 }
