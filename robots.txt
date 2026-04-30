@@ -1,0 +1,44 @@
+# AC-Consulting robots.txt
+# https://ac-consulting.cloud
+
+# Allow all crawlers to access the site
+User-agent: *
+Allow: /
+
+# Block admin and private directories (if they exist)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /*.json$
+Disallow: /*?*
+Allow: /servicios/
+Allow: /blog/
+Allow: /contacto.html
+
+# Sitemap location
+Sitemap: https://ac-consulting.cloud/sitemap.xml
+
+# Crawl delay (optional - helps with server resources)
+Crawl-delay: 1
+
+# Specific rules for search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Allow AI crawlers for GEO (Generative Engine Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
