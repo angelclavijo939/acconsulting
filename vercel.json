@@ -1,7 +1,9 @@
 {
-  "buildCommand": "echo 'Deploying static HTML'",
+  "buildCommand": "echo 'Static HTML deployment'",
   "outputDirectory": "./",
-  "public": true,
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "functions": {},
   "headers": [
     {
       "source": "/(.*)",
@@ -11,24 +13,33 @@
           "value": "public, max-age=3600, s-maxage=3600"
         }
       ]
-    }
-  ],
-  "rewrites": [
+    },
     {
       "source": "/robots.txt",
-      "destination": "/robots.txt"
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        }
+      ]
     },
     {
       "source": "/sitemap.xml",
-      "destination": "/sitemap.xml"
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml; charset=utf-8"
+        }
+      ]
     },
     {
       "source": "/llms.txt",
-      "destination": "/llms.txt"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/$1"
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        }
+      ]
     }
   ]
 }
