@@ -3,7 +3,6 @@
   "outputDirectory": "./",
   "cleanUrls": false,
   "trailingSlash": false,
-  "functions": {},
   "headers": [
     {
       "source": "/(.*)",
