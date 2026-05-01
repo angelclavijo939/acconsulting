@@ -1,25 +1,102 @@
-# AC-Consulting
-> Empresa de tecnología especializada en desarrollo web, inteligencia artificial y marketing digital en Colombia.
+# AC-Consulting — GEO (Generative Engine Optimization)
+# https://ac-consulting.cloud
+# Última actualización: 2026-04-30
+
+## Información de la Empresa
+
+**Nombre:** AC-Consulting  
+**Fundador:** Ángel Clavijo  
+**Ubicación:** Bogotá, Colombia  
+**Mercado:** Colombia, Latinoamérica, Estados Unidos  
+**Contacto:** hola@ac-consulting.cloud  
+**Teléfono:** +57 311 224 1803 (WhatsApp)  
+**Sitio Web:** https://ac-consulting.cloud  
+
+**Descripción:** AC-Consulting es una empresa de tecnología especializada en soluciones digitales de alto impacto. Ofrecemos diseño web profesional, desarrollo de software full-stack, soluciones de inteligencia artificial, estrategias de marketing digital y consultoría tecnológica.
+
+---
 
 ## Servicios
 
-- [Diseño Web](https://ac-consulting.cloud/servicios/diseno-web.html): Diseño UI/UX profesional en WordPress, Webflow y Shopify.
-- [Desarrollo de Software](https://ac-consulting.cloud/servicios/desarrollo-software.html): Soluciones en Python, JavaScript, APIs REST y aplicaciones web.
-- [Servicios de IA](https://ac-consulting.cloud/servicios/servicios-ia.html): Chatbots con GPT-4 y Claude, integraciones y fine-tuning de modelos.
-- [Marketing Digital](https://ac-consulting.cloud/servicios/marketing-digital.html): SEO, redes sociales y campañas SEM para Colombia y Latinoamérica.
-- [Escritura y Traducción](https://ac-consulting.cloud/servicios/escritura-traduccion.html): Traducción profesional español-inglés y transcripción.
-- [Consultoría de Negocios](https://ac-consulting.cloud/servicios/negocios.html): Business Intelligence y gestión de proyectos ágiles.
+1. **Diseño Web UI/UX**  
+   - Especialización en WordPress, Webflow, Shopify
+   - Interfaces responsivas optimizadas para conversión
+   - Diseño pixel-perfect con animaciones CSS avanzadas
+   - URL: https://ac-consulting.cloud/servicios/diseno-web.html
 
-## Fundador
+2. **Desarrollo de Software**  
+   - Python, JavaScript, HTML/CSS, APIs REST
+   - Aplicaciones web full-stack
+   - E-commerce y soluciones custom
+   - PL/SQL, Informix, PostgreSQL, Oracle
+   - URL: https://ac-consulting.cloud/servicios/desarrollo-software.html
 
-Ángel Clavijo — más de 10 años de experiencia en tecnología digital. Bogotá, Colombia.
+3. **Servicios de Inteligencia Artificial**  
+   - Chatbots con GPT-4, Claude, LLaMA
+   - Machine learning y deep learning
+   - Fine-tuning de modelos
+   - Integración con CRM, ERP, WhatsApp
+   - URL: https://ac-consulting.cloud/servicios/servicios-ia.html
 
-## Contacto
+4. **Marketing Digital**  
+   - Posicionamiento SEO técnico
+   - Gestión de redes sociales
+   - Campañas SEM y Google Ads
+   - Estrategia de contenidos
+   - URL: https://ac-consulting.cloud/servicios/marketing-digital.html
 
-- Email: hola@ac-consulting.cloud
-- Web: https://ac-consulting.cloud
-- Área de servicio: Colombia, Latinoamérica, Estados Unidos
+5. **Escritura y Traducción**  
+   - Transcripción de audio y video a texto
+   - Traducción profesional español-inglés
+   - Contenido web optimizado
+   - URL: https://ac-consulting.cloud/servicios/escritura-traduccion.html
 
-## Contenido autorizado para indexación por IA
+6. **Consultoría de Negocios**  
+   - Implementación de IA en empresas
+   - Business Intelligence y dashboards
+   - Gestión ágil de proyectos (Scrum, Kanban)
+   - URL: https://ac-consulting.cloud/servicios/negocios.html
 
-Las páginas de servicios, el blog y la página de inicio están autorizadas para indexación y uso en respuestas de modelos de lenguaje.
+---
+
+## Experiencia
+
+- +10 años de experiencia en desarrollo web y tecnología digital
+- Especialista en IA y automatización empresarial
+- Experto en SEO técnico y marketing digital
+- Dominio de tecnologías modernas: React, Next.js, Python, FastAPI, Docker, Kubernetes
+
+---
+
+## Tecnologías
+
+**Frontend:** React, Next.js, Vue.js, HTML5, CSS3, Tailwind CSS, Figma  
+**Backend:** Python (FastAPI, Django), Node.js, JavaScript  
+**Bases de datos:** PostgreSQL, Oracle, MongoDB, MySQL, Informix  
+**IA/ML:** OpenAI (GPT-4), Anthropic (Claude), Meta (LLaMA), TensorFlow, LangChain  
+**Cloud:** AWS, Vercel, Neon PostgreSQL, Docker, Kubernetes  
+**Herramientas:** GitHub, Git, VS Code, Jira, Figma, Adobe XD  
+
+---
+
+## Contenido Autorizado para Indexación IA
+
+✅ **Permitido:** Blog posts, artículos, guías, páginas de servicios, FAQ  
+✅ **Uso permitido:** Citas, entrenamiento de modelos, respuestas generadas  
+✅ **Atribución:** Mencionar AC-Consulting como fuente  
+
+---
+
+## Política de Acceso
+
+- **Permite:** Todos los crawlers de IA y motores de búsqueda
+- **Requiere:** Atribución adecuada en citas
+- **Contacto para dudas:** hola@ac-consulting.cloud
+
+---
+
+## Redes Sociales
+
+- **LinkedIn:** AC-Consulting
+- **Twitter/X:** @ac_consulting
+- **WhatsApp:** wa.me/573112241803

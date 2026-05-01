@@ -1,20 +1,40 @@
-# ac-consulting.cloud — robots.txt
-# Actualizado: 2026-04-29
+# ac-consulting.cloud robots.txt
+# Updated: 2026-04-30
 
-# Motores de búsqueda principales
+# Allow all crawlers by default
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /backend/
+Disallow: /api/
+
+# Google
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
-User-agent: Bingbot
+User-agent: Googlebot-Image
 Allow: /
 
+User-agent: GoogleOther
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Other search engines
 User-agent: Slurp
 Allow: /
 
 User-agent: DuckDuckBot
 Allow: /
 
-# Redes sociales
+User-agent: Yandex
+Allow: /
+
+# Social Media
 User-agent: Twitterbot
 Allow: /
 
@@ -24,31 +44,27 @@ Allow: /
 User-agent: LinkedInBot
 Allow: /
 
-# AI crawlers
+User-agent: WhatsApp
+Allow: /
+
+# AI Crawlers - ALLOWED
 User-agent: GPTBot
 Allow: /
 
-User-agent: ClaudeBot
+User-agent: Claude-Web
 Allow: /
 
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: GoogleOther
+User-agent: cohere-ai
 Allow: /
 
 User-agent: anthropic-ai
 Allow: /
 
-User-agent: cohere-ai
+User-agent: CCBot
 Allow: /
-
-# Todos los demás
-User-agent: *
-Allow: /
-Disallow: /admin/
-Disallow: /backend/
-Disallow: /api/
 
 # Sitemap
 Sitemap: https://ac-consulting.cloud/sitemap.xml
