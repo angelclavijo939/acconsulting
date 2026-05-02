@@ -1,5 +1,5 @@
 # ac-consulting.cloud robots.txt
-# Updated: 2026-04-30
+# Updated: 2026-05-02
 
 # Allow all crawlers by default
 User-agent: *
