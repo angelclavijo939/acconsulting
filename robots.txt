@@ -46,7 +46,6 @@ Allow: /
 
 # Sitemap
 Sitemap: https://ac-consulting.cloud/sitemap.xml
-Sitemap: https://ac-consulting.cloud/sitemap-news.xml
 
 # Canonical domains
 Host: ac-consulting.cloud
