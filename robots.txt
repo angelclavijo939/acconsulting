@@ -1,51 +1,21 @@
-# robots.txt - AC-Consulting
-# Ubicar en: https://ac-consulting.cloud/robots.txt
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
 
 User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /private/
-Disallow: /temp/
-Disallow: /cache/
-Disallow: /*.pdf$
-Disallow: /*?*sort=
-Disallow: /*?*filter=
 
-# Google Search Console crawling
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 1
-
-# Bing
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 1
-
-# ChatGPT / Otros crawlers de IA
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: GPTBot
-Allow: /
-
-User-agent: CCBot
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-# Bloquear bad bots
-User-agent: MJ12bot
-Disallow: /
-
-User-agent: SemrushBot
-Allow: /
-
-User-agent: AhrefsBot
-Allow: /
-
-# Sitemap
 Sitemap: https://ac-consulting.cloud/sitemap.xml
-
-# Canonical domains
-Host: ac-consulting.cloud

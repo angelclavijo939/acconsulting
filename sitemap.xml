@@ -1,94 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Homepage -->
+  <!-- INICIO -->
   <url>
     <loc>https://ac-consulting.cloud/</loc>
-    <lastmod>2026-05-02</lastmod>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Legal pages -->
+  <!-- SERVICIOS -->
   <url>
-    <loc>https://ac-consulting.cloud/politica-privacidad.html</loc>
-    <lastmod>2026-05-02</lastmod>
+    <loc>https://ac-consulting.cloud/servicios/servicios-ia.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ac-consulting.cloud/servicios/diseno-web.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ac-consulting.cloud/servicios/desarrollo-software.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ac-consulting.cloud/servicios/marketing-digital.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ac-consulting.cloud/servicios/negocios.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ac-consulting.cloud/servicios/escritura-traduccion.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
-  <!-- Contact -->
+  <!-- BLOG -->
   <url>
-    <loc>https://ac-consulting.cloud/contacto.html</loc>
-    <lastmod>2026-04-26</lastmod>
+    <loc>https://ac-consulting.cloud/blog/futuro-ia-generativa-negocios.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ac-consulting.cloud/blog/seo-tecnico-triplicar-trafico-organico-90-dias.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ac-consulting.cloud/blog/automatizacion-inteligente-ahorra-20-horas-semanales.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Service pages -->
+  <!-- PÁGINAS LEGALES Y CONTACTO -->
   <url>
-    <loc>https://ac-consulting.cloud/servicios/diseno-web.html</loc>
+    <loc>https://ac-consulting.cloud/contacto.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ac-consulting.cloud/politica-privacidad.html</loc>
     <lastmod>2026-05-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://ac-consulting.cloud/servicios/desarrollo-software.html</loc>
-    <lastmod>2026-04-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://ac-consulting.cloud/servicios/servicios-ia.html</loc>
-    <lastmod>2026-05-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://ac-consulting.cloud/servicios/marketing-digital.html</loc>
-    <lastmod>2026-05-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://ac-consulting.cloud/servicios/escritura-traduccion.html</loc>
-    <lastmod>2026-04-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://ac-consulting.cloud/servicios/negocios.html</loc>
-    <lastmod>2026-04-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Blog posts -->
-  <url>
-    <loc>https://ac-consulting.cloud/blog/futuro-ia-generativa-negocios.html</loc>
-    <lastmod>2026-05-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://ac-consulting.cloud/blog/seo-tecnico-triplicar-trafico-organico-90-dias.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://ac-consulting.cloud/blog/automatizacion-inteligente-ahorra-20-horas-semanales.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 
 </urlset>
