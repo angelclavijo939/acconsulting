@@ -44,11 +44,8 @@ Allow: /
 User-agent: AhrefsBot
 Allow: /
 
-# Canonical domains
-Host: ac-consulting.cloud
-
 # Sitemap
 Sitemap: https://ac-consulting.cloud/sitemap.xml
 
-
-
+# Canonical domains
+Host: ac-consulting.cloud
