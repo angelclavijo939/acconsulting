@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="icon" href="/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diseño Web Responsivo: Guía Completa 2025 | AC-Consulting</title>
+  <meta name="description" content="Guía completa sobre diseño web responsivo: qué es, por qué es crítico para SEO y cómo implementarlo correctamente en 2025. Aprende mobile-first, breakpoints y Core Web Vitals." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ac-consulting.cloud/blog/diseno-web-responsivo.html" />
+  <meta property="og:title" content="Diseño Web Responsivo: Guía Completa 2025 | AC-Consulting" />
+  <meta property="og:description" content="Todo lo que necesitas saber sobre diseño web responsivo: mobile-first, breakpoints, Core Web Vitals y SEO. Guía práctica con ejemplos reales." />
+  <meta property="og:url" content="https://ac-consulting.cloud/blog/diseno-web-responsivo.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1555421689-491a97ff2040?w=1200&h=630&fit=crop&format=webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Diseño Web Responsivo: Guía Completa 2025" />
+  <meta name="twitter:description" content="Todo lo que necesitas saber sobre diseño web responsivo en 2025." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1555421689-491a97ff2040?w=1200&h=630&fit=crop&format=webp" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Diseño Web Responsivo: Guía Completa 2025",
+    "description": "Guía completa sobre diseño web responsivo: qué es, por qué es crítico para SEO y cómo implementarlo correctamente en 2025.",
+    "image": "https://images.unsplash.com/photo-1555421689-491a97ff2040?w=1200&h=630&fit=crop&format=webp",
+    "author": {
+      "@type": "Person",
+      "name": "Ángel Clavijo",
+      "url": "https://ac-consulting.cloud"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "AC-Consulting",
+      "url": "https://ac-consulting.cloud",
+      "logo": { "@type": "ImageObject", "url": "https://ac-consulting.cloud/logo.png" }
+    },
+    "datePublished": "2025-03-10",
+    "dateModified": "2025-03-10",
+    "mainEntityOfPage": "https://ac-consulting.cloud/blog/diseno-web-responsivo.html"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://ac-consulting.cloud/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://ac-consulting.cloud/#blog" },
+      { "@type": "ListItem", "position": 3, "name": "Diseño Web Responsivo: Guía Completa", "item": "https://ac-consulting.cloud/blog/diseno-web-responsivo.html" }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    .article-hero { padding: 60px 0 40px; }
+    .article-hero .back-btn { display: inline-block; margin-bottom: 24px; color: var(--accent); text-decoration: none; font-size: 0.95rem; }
+    .article-hero .back-btn:hover { text-decoration: underline; }
+    .article-meta { display: flex; gap: 20px; align-items: center; color: var(--text-muted); font-size: 0.88rem; margin: 16px 0 32px; flex-wrap: wrap; }
+    .article-meta .tag { background: rgba(204,85,0,0.15); color: var(--accent); padding: 4px 12px; border-radius: 20px; font-size: 0.82rem; font-weight: 600; }
+    .article-hero-img { width: 100%; max-height: 480px; object-fit: cover; border-radius: var(--radius-lg); margin-bottom: 48px; }
+    .article-body { max-width: 760px; margin: 0 auto; color: var(--text-muted); line-height: 1.85; font-size: 1.05rem; }
+    .article-body h2 { font-family: var(--font-display); font-size: 1.7rem; color: var(--white); margin: 48px 0 16px; }
+    .article-body h3 { font-size: 1.15rem; color: var(--white); font-weight: 600; margin: 32px 0 12px; }
+    .article-body p { margin-bottom: 20px; }
+    .article-body ul, .article-body ol { margin: 12px 0 20px 24px; }
+    .article-body li { margin-bottom: 10px; }
+    .article-body strong { color: var(--white); }
+    .article-body .highlight-box { background: var(--card-bg); border-left: 4px solid var(--accent); padding: 20px 24px; border-radius: 0 var(--radius-md) var(--radius-md) 0; margin: 28px 0; }
+    .article-body .highlight-box p { margin: 0; }
+    .article-cta { background: rgba(204,85,0,0.1); border: 1px solid rgba(204,85,0,0.3); border-radius: var(--radius-lg); padding: 40px; text-align: center; margin: 60px 0; }
+    .article-cta h3 { font-family: var(--font-display); font-size: 1.6rem; color: var(--white); margin-bottom: 12px; }
+    .article-cta p { color: var(--text-muted); margin-bottom: 24px; }
+    .related-articles { margin: 60px 0 80px; }
+    .related-articles h3 { font-family: var(--font-display); font-size: 1.4rem; color: var(--white); margin-bottom: 24px; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap: 20px; }
+    .related-card { background: var(--card-bg); border-radius: var(--radius-md); padding: 24px; border: 1px solid rgba(255,255,255,0.06); text-decoration: none; display: block; transition: border-color 0.2s; }
+    .related-card:hover { border-color: rgba(204,85,0,0.4); }
+    .related-card h4 { color: var(--white); font-size: 1rem; margin-bottom: 8px; }
+    .related-card p { color: var(--text-muted); font-size: 0.88rem; margin: 0; }
+  </style>
+</head>
+<body>
+  <header class="header scrolled" id="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo"><span class="logo-mark">A</span><span class="logo-text">C-Consulting</span></a>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      <nav class="nav" id="nav">
+        <a href="../index.html" class="nav-link">Inicio</a>
+        <a href="../index.html#servicios" class="nav-link scroll-link">Servicios</a>
+        <a href="../index.html#quien-soy" class="nav-link">Quién soy</a>
+        <a href="../index.html#blog" class="nav-link active scroll-link">Blog</a>
+        <a href="../contacto.html" class="nav-link nav-cta">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="article-hero">
+    <div class="container">
+      <a href="../index.html#blog" class="back-btn">← Volver al Blog</a>
+      <div class="article-meta">
+        <span class="tag">Diseño Web</span>
+        <span>10 de marzo, 2025</span>
+        <span>Por Ángel Clavijo</span>
+        <span>8 min de lectura</span>
+      </div>
+      <h1 class="section-title" style="text-align:left;max-width:760px;">Diseño Web Responsivo: <em>Guía Completa</em> 2025</h1>
+      <img
+        src="https://images.unsplash.com/photo-1555421689-491a97ff2040?q=80&w=1400&auto=format&fit=crop"
+        alt="Diseño web responsivo en múltiples dispositivos"
+        class="article-hero-img"
+        loading="eager"
+      />
+    </div>
+  </section>
+
+  <section style="padding: 0 0 80px;">
+    <div class="container">
+      <div class="article-body">
+
+        <p>En 2025, <strong>más del 60% del tráfico web global viene de dispositivos móviles</strong>. Si tu sitio no se adapta correctamente a teléfonos y tablets, estás perdiendo más de la mitad de tus visitantes potenciales — y Google te penaliza por ello. El diseño web responsivo ya no es una opción: es el estándar mínimo.</p>
+
+        <p>En esta guía cubrimos qué es exactamente el diseño responsivo, por qué es crítico para tu SEO, y cómo implementarlo correctamente paso a paso.</p>
+
+        <h2>¿Qué es el diseño web responsivo?</h2>
+
+        <p>El diseño web responsivo (o <em>responsive web design</em>) es una técnica de desarrollo que permite que un sitio web se adapte automáticamente al tamaño de pantalla del dispositivo que lo está visualizando — ya sea un teléfono de 360px, una tablet de 768px o un monitor de 1440px.</p>
+
+        <p>No hablamos de crear tres versiones diferentes del sitio. Se trata de un solo código que responde fluidamente a cualquier viewport mediante CSS flexible, grids adaptables e imágenes escalables.</p>
+
+        <div class="highlight-box">
+          <p><strong>Dato clave:</strong> Google usa <em>mobile-first indexing</em> desde 2021. Esto significa que Google indexa y rankea tu sitio basándose en su versión móvil, no en la de escritorio. Si tu móvil está roto, tu SEO está roto.</p>
+        </div>
+
+        <h2>Mobile-first: el enfoque correcto</h2>
+
+        <p>Durante años, los diseñadores construían sitios para escritorio y luego los "adaptaban" al móvil. Ese enfoque está obsoleto. El estándar actual es <strong>mobile-first</strong>: diseñar primero para la pantalla más pequeña y luego expandir progresivamente hacia pantallas más grandes.</p>
+
+        <h3>¿Por qué mobile-first?</h3>
+        <ul>
+          <li><strong>Prioriza lo esencial:</strong> Te obliga a identificar qué contenido realmente importa, eliminando lo superfluo.</li>
+          <li><strong>Mejor rendimiento:</strong> Los dispositivos móviles tienen menos potencia y conexiones más lentas. Optimizar desde ahí garantiza velocidad en todos los contextos.</li>
+          <li><strong>SEO superior:</strong> Al alinearte con el criterio de indexación de Google, tus rankings mejoran naturalmente.</li>
+          <li><strong>Menos rework:</strong> Agregar complejidad al crecer es más fácil que eliminarla al reducir.</li>
+        </ul>
+
+        <p>En CSS, mobile-first se traduce en escribir estilos base para móvil y usar <code>min-width</code> en los media queries para escalar hacia arriba:</p>
+
+        <div class="highlight-box">
+          <p><strong>Ejemplo mobile-first en CSS:</strong><br/>
+          <code>/* Base: móvil */</code><br/>
+          <code>.grid { display: block; }</code><br/>
+          <code>/* Tablet en adelante */</code><br/>
+          <code>@media (min-width: 768px) { .grid { display: grid; grid-template-columns: 1fr 1fr; } }</code><br/>
+          <code>/* Desktop */</code><br/>
+          <code>@media (min-width: 1024px) { .grid { grid-template-columns: repeat(3, 1fr); } }</code>
+          </p>
+        </div>
+
+        <h2>Breakpoints: cuándo y cómo usarlos</h2>
+
+        <p>Los breakpoints son los puntos de quiebre donde el diseño cambia para adaptarse a una pantalla más grande. El error más común es definirlos por dispositivo específico ("iPhone 14", "iPad Pro"). En su lugar, <strong>define breakpoints según tu contenido</strong>: cuando el diseño empieza a verse mal, ahí va el breakpoint.</p>
+
+        <h3>Breakpoints estándar más usados en 2025:</h3>
+        <ul>
+          <li><strong>480px:</strong> Teléfonos pequeños / landscape</li>
+          <li><strong>768px:</strong> Tablets en portrait</li>
+          <li><strong>1024px:</strong> Tablets landscape / laptops pequeños</li>
+          <li><strong>1280px:</strong> Desktops estándar</li>
+          <li><strong>1536px:</strong> Pantallas grandes / 4K</li>
+        </ul>
+
+        <p>Con CSS Grid y Flexbox modernos, muchas adaptaciones pueden resolverse sin media queries usando propiedades como <code>auto-fit</code>, <code>minmax()</code>, y <code>clamp()</code> para tipografía fluida.</p>
+
+        <h2>Imágenes responsivas: el detalle que más afecta la velocidad</h2>
+
+        <p>Las imágenes representan el 60-70% del peso de una página web típica. Servirle a un móvil una imagen de 2000px de ancho cuando solo necesita 400px es un error gravísimo — en rendimiento y en Core Web Vitals.</p>
+
+        <h3>Técnicas imprescindibles:</h3>
+        <ul>
+          <li><strong>Atributo <code>srcset</code>:</strong> Define múltiples versiones de la imagen para diferentes resoluciones. El navegador elige la correcta automáticamente.</li>
+          <li><strong>Formato WebP o AVIF:</strong> 30-50% más livianos que JPEG con la misma calidad visual.</li>
+          <li><strong>Lazy loading:</strong> <code>loading="lazy"</code> en el <code>&lt;img&gt;</code> para diferir la carga de imágenes fuera del viewport.</li>
+          <li><strong>Dimensiones explícitas:</strong> Siempre define <code>width</code> y <code>height</code> para evitar Cumulative Layout Shift (CLS).</li>
+        </ul>
+
+        <h2>Core Web Vitals y diseño responsivo</h2>
+
+        <p>Desde 2021, Google usa los <strong>Core Web Vitals</strong> como factor de ranking. Son tres métricas que miden la experiencia real del usuario:</p>
+
+        <ul>
+          <li><strong>LCP (Largest Contentful Paint):</strong> Tiempo en que carga el elemento más grande visible. Meta: menos de 2.5 segundos.</li>
+          <li><strong>INP (Interaction to Next Paint):</strong> Tiempo de respuesta a interacciones del usuario. Meta: menos de 200ms.</li>
+          <li><strong>CLS (Cumulative Layout Shift):</strong> Estabilidad visual — cuánto se "mueve" el contenido durante la carga. Meta: menos de 0.1.</li>
+        </ul>
+
+        <p>Un diseño responsivo mal implementado destruye estas métricas: imágenes sin dimensiones generan CLS, recursos no optimizados disparan el LCP, y JavaScript excesivo arruina el INP.</p>
+
+        <div class="highlight-box">
+          <p><strong>Herramienta recomendada:</strong> Usa <a href="https://pagespeed.web.dev" target="_blank" rel="noopener" style="color:var(--accent);">PageSpeed Insights</a> para medir tus Core Web Vitals tanto en móvil como en escritorio. Es gratis y te da recomendaciones específicas.</p>
+        </div>
+
+        <h2>Tipografía fluida: texto que se adapta sin saltos</h2>
+
+        <p>En lugar de redefinir tamaños de fuente en cada breakpoint, la tipografía fluida escala linealmente entre un mínimo y un máximo usando la función <code>clamp()</code>:</p>
+
+        <div class="highlight-box">
+          <p><code>h1 { font-size: clamp(1.8rem, 4vw, 3.2rem); }</code><br/>
+          <code>p { font-size: clamp(1rem, 2vw, 1.2rem); }</code></p>
+        </div>
+
+        <p>El resultado es tipografía que se ve bien en cualquier tamaño de pantalla, sin necesidad de múltiples media queries para el texto.</p>
+
+        <h2>Errores comunes en diseño responsivo</h2>
+
+        <ul>
+          <li><strong>Menús de hamburguesa que no funcionan en móvil:</strong> El menú es lo primero que el usuario necesita en móvil. Si falla, el sitio falla.</li>
+          <li><strong>Textos demasiado pequeños:</strong> Google penaliza fuentes menores a 12px en móvil.</li>
+          <li><strong>Botones demasiado juntos:</strong> Los elementos táctiles deben tener al menos 44x44px de área de toque.</li>
+          <li><strong>Contenido horizontal que desborda:</strong> Un <code>overflow-x: hidden</code> en el <code>body</code> puede ocultar el problema sin resolverlo.</li>
+          <li><strong>Popups que bloquean el contenido en móvil:</strong> Google los penaliza directamente si aparecen al cargar la página.</li>
+          <li><strong>No testear en dispositivos reales:</strong> Las DevTools del navegador son un buen punto de partida, pero no reemplazan pruebas en hardware real.</li>
+        </ul>
+
+        <h2>Cómo testear tu diseño responsivo</h2>
+
+        <p>Antes de publicar, valida tu sitio con estas herramientas:</p>
+
+        <ul>
+          <li><strong>Chrome DevTools:</strong> Modo de dispositivo con múltiples viewports predefinidos.</li>
+          <li><strong>Google Mobile-Friendly Test:</strong> Verifica si Google considera tu sitio apto para móvil.</li>
+          <li><strong>BrowserStack:</strong> Prueba en dispositivos reales de forma remota (de pago).</li>
+          <li><strong>PageSpeed Insights:</strong> Métricas de rendimiento en móvil y escritorio.</li>
+          <li><strong>Responsively App:</strong> Herramienta gratuita para ver múltiples viewports simultáneamente.</li>
+        </ul>
+
+        <h2>¿Vale la pena invertir en diseño responsivo profesional?</h2>
+
+        <p>Absolutamente. Un sitio responsivo bien ejecutado no es solo una cuestión técnica — es una decisión de negocio. Los datos son claros: sitios con diseño mobile-first convierten hasta un 40% más en móvil, reducen la tasa de rebote y mejoran su posición en Google.</p>
+
+        <p>Si tu sitio actual fue construido hace más de 3 años sin mobile-first en mente, probablemente estás dejando dinero sobre la mesa cada día.</p>
+
+        <div class="article-cta">
+          <h3>¿Tu sitio pasa la prueba mobile?</h3>
+          <p>Hacemos una auditoría gratuita de tu sitio actual. Te decimos exactamente qué está fallando en móvil y cómo arreglarlo.</p>
+          <a href="../contacto.html" class="btn btn-primary">Solicitar auditoría gratuita</a>
+        </div>
+
+        <div class="related-articles">
+          <h3>Artículos relacionados</h3>
+          <div class="related-grid">
+            <a href="seo-tecnico-diseno-web.html" class="related-card">
+              <h4>SEO Técnico en Diseño Web: Mejores Prácticas</h4>
+              <p>Cómo optimizar tu sitio para Google desde el diseño.</p>
+            </a>
+            <a href="ux-ui-conversiones.html" class="related-card">
+              <h4>UX/UI Moderno: Convierte Visitantes en Clientes</h4>
+              <p>Principios de diseño que aumentan las conversiones.</p>
+            </a>
+            <a href="../servicios/diseno-web.html" class="related-card">
+              <h4>Nuestro servicio de Diseño Web</h4>
+              <p>Diseños responsivos, rápidos y optimizados para SEO.</p>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo"><span class="logo-mark">A</span><span class="logo-text">C-Consulting</span></a>
+          <p>Transformamos ideas en soluciones digitales que generan resultados reales.</p>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/company/113216194" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+            <a href="https://twitter.com/consulting_26" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">𝕏</a>
+            <a href="https://www.instagram.com/consulting_tech26" target="_blank" rel="noopener noreferrer" aria-label="Instagram">⊕</a>
+            <a href="https://github.com/angelclavijo939" target="_blank" rel="noopener noreferrer" aria-label="GitHub">⌥</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Servicios</h4>
+          <a href="../servicios/diseno-web.html">Diseño Web</a>
+          <a href="../servicios/desarrollo-software.html">Desarrollo de Software</a>
+          <a href="../servicios/servicios-ia.html">Servicios de IA</a>
+          <a href="../servicios/marketing-digital.html">Marketing Digital</a>
+        </div>
+        <div class="footer-links">
+          <h4>Empresa</h4>
+          <a href="../index.html#quien-soy">Quién soy</a>
+          <a href="../index.html#blog">Blog</a>
+          <a href="../contacto.html">Contacto</a>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Novedades en diseño y tecnología.</p>
+          <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+            <input type="email" placeholder="tu@email.com" required />
+            <button type="submit" class="btn btn-primary">Suscribir</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 AC-Consulting. Todos los derechos reservados.</p>
+        <p>Contacto legal: <a href="mailto:hola@ac-consulting.cloud">hola@ac-consulting.cloud</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" id="waFloat" href="#" target="_blank" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+  <script>
+    (function() {
+      var p1 = '57311'; var p2 = '224'; var p3 = '1803';
+      var wa = document.getElementById('waFloat');
+      if (wa) wa.href = 'https://wa.me/' + p1 + p2 + p3 + '?text=Hola%20AC-Consulting%2C%20quiero%20una%20cotización';
+    })();
+  </script>
+  <script src="../scripts.js"></script>
+</body>
+</html>
