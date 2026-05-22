@@ -1,21 +1,22 @@
-User-agent: GPTBot
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: Amazonbot
-Allow: /
-
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /private/
+Disallow: /?
+Disallow: /*?s=
+Disallow: /search
+Disallow: /buscar
+Disallow: /*?search=
+Disallow: /*utm_*
 
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Sitemap
 Sitemap: https://ac-consulting.cloud/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
