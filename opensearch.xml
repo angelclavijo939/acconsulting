@@ -2,8 +2,8 @@
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
   <ShortName>AC-Consulting</ShortName>
   <Description>Busca en AC-Consulting</Description>
-  <Url type="text/html" method="get" template="https://ac-consulting.cloud/?s={searchTerms}"/>
-  <Url type="application/x-suggestions+json" method="get" template="https://ac-consulting.cloud/search-suggestions.json?s={searchTerms}"/>
+  <Url type="text/html" method="get" template="https://ac-consulting.cloud/search?q={searchTerms}"/>
+  <Url type="application/x-suggestions+json" method="get" template="https://ac-consulting.cloud/search-suggestions.json?q={searchTerms}"/>
   <Contact>hola@ac-consulting.cloud</Contact>
   <Tags>ia generativa desarrollo web colombia</Tags>
   <Image height="16" width="16">https://ac-consulting.cloud/images/favicon.ico</Image>
