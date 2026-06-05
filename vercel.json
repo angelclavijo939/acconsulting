@@ -1,10 +1,7 @@
 {
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.ac-consulting.cloud" }],
-      "destination": "https://ac-consulting.cloud/:path*",
-      "permanent": true
-    }
-  ]
+  "buildCommand": "",
+  "installCommand": "",
+  "outputDirectory": ".",
+  "framework": null,
+  "public": false
 }
