@@ -156,51 +156,59 @@ const contactForm = document.getElementById('contactForm');
 if (contactForm) {
   contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
+    
     const formMsg = document.getElementById('formMsg');
-    const btn = contactForm.querySelector('button[type=submit]');
-    btn.disabled = true;
-    btn.textContent = 'Enviando...';
-
-    const data = {
-      nombres: document.getElementById('nombres').value.toUpperCase(),
-      apellidos: document.getElementById('apellidos').value.toUpperCase(),
-      correo: document.getElementById('correo').value,
-      telefono: document.getElementById('telefono').value,
-      mensaje: document.getElementById('mensaje').value
-    };
-
-    // Validación correo
-    if (!data.correo.includes('@')) {
+    const btn = contactForm.querySelector('button[type="submit"]');
+    const btnText = btn.textContent;
+    
+    // Validar email
+    const correo = document.getElementById('correo').value;
+    if (!correo.includes('@')) {
       formMsg.className = 'form-msg error';
-      formMsg.textContent = 'El correo electrónico no es válido.';
-      btn.disabled = false;
-      btn.textContent = 'Enviar mensaje';
+      formMsg.textContent = '❌ El correo electrónico no es válido.';
       return;
     }
-
+    
     try {
-      const res = await fetch('/api/save_contact', {
+      btn.disabled = true;
+      btn.textContent = 'Enviando...';
+      formMsg.className = 'form-msg';
+      formMsg.textContent = '';
+
+      // Enviar a tu API en localhost o producción
+      const apiUrl = window.location.hostname === 'localhost' 
+        ? 'http://localhost:3000' 
+        : 'https://tu-api-produccion.vercel.app'; // Cambiar cuando deployes
+      
+      const response = await fetch(`${apiUrl}/api/contact`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
+        body: JSON.stringify({
+          nombre: document.getElementById('nombres').value.trim(),
+          apellidos: document.getElementById('apellidos').value.trim(),
+          correo: correo.trim(),
+          telefono: document.getElementById('telefono').value.trim(),
+        }),
       });
-      const json = await res.json();
-      if (json.success) {
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
         formMsg.className = 'form-msg success';
-        formMsg.textContent = '¡Mensaje enviado! Nos pondremos en contacto pronto.';
+        formMsg.textContent = '✅ ' + data.message;
         contactForm.reset();
-        setTimeout(() => { window.location.href = 'index.html'; }, 2000);
       } else {
         formMsg.className = 'form-msg error';
-        formMsg.textContent = json.message || 'Ocurrió un error. Intenta de nuevo.';
+        formMsg.textContent = '❌ ' + (data.error || 'Error al enviar');
       }
-    } catch {
+    } catch (error) {
+      console.error('Error:', error);
       formMsg.className = 'form-msg error';
-      formMsg.textContent = 'Error de conexión. Verifica tu internet e intenta de nuevo.';
+      formMsg.textContent = '❌ Error de conexión. Verifica que el servidor esté corriendo.';
+    } finally {
+      btn.disabled = false;
+      btn.textContent = btnText;
     }
-
-    btn.disabled = false;
-    btn.textContent = 'Enviar mensaje';
   });
 }
 
