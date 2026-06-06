@@ -178,7 +178,7 @@ if (contactForm) {
       // Enviar a tu API en localhost o producción
       const apiUrl = window.location.hostname === 'localhost' 
         ? 'http://localhost:3000' 
-        : 'ac-consulting-leads-api-angelclavijo939s-projects.vercel.app'; 
+        : 'https://ac-consulting-leads-api.vercel.app'; 
       
       const response = await fetch(`${apiUrl}/api/contact`, {
         method: 'POST',
