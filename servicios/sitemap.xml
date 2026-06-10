@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!--
+    SITEMAP DEL BLOG - ac-consulting.cloud
+    Generado: 2026-06-10
+    Total estimado: 124 URLs
+    NOTA: Este sitemap contiene 2 advertencias en GSC por URLs con redirect no encontrado.
+    Acción requerida: revisar y corregir las URLs con redirección rota antes de re-subir.
+  -->
+
+  <!-- Página principal del blog -->
+  <url>
+    <loc>https://ac-consulting.cloud/blog/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Categorías del blog -->
+  <url>
+    <loc>https://ac-consulting.cloud/blog/category/consultoria/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ac-consulting.cloud/blog/category/tecnologia/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ac-consulting.cloud/blog/category/estrategia/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ac-consulting.cloud/blog/category/negocios/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!--
+    ============================================================
+    ARTÍCULOS DEL BLOG (120 URLs - representación estructural)
+    Reemplazar con las URLs reales exportadas de tu CMS/base de datos
+    ============================================================
+  -->
+
+  <!-- Artículos recientes (ejemplo estructural) -->
+  <url>
+    <loc>https://ac-consulting.cloud/blog/transformacion-digital-empresas-2026/</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ac-consulting.cloud/blog/estrategias-consultoria-ia/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ac-consulting.cloud/blog/gestion-proyectos-agile/</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ac-consulting.cloud/blog/optimizacion-procesos-empresariales/</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ac-consulting.cloud/blog/cloud-computing-pymes/</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!--
+    INSTRUCCIÓN IMPORTANTE:
+    Las 2 URLs con advertencia en GSC (redirect no encontrado) NO deben incluirse aquí.
+    Una vez corregidas las redirecciones rotas, agregar las URLs corregidas.
+
+    Para completar este sitemap con las 124 URLs reales, exportar el listado completo
+    desde tu CMS (WordPress, Webflow, etc.) y reemplazar las entradas de ejemplo.
+  -->
+
+</urlset>
