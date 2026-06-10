@@ -1,46 +1,26 @@
-# https://ac-consulting.cloud/llms.txt
-# Instrucciones para modelos de lenguaje e IA generativa
+# AC-Consulting
+> Agencia de IA, desarrollo web y marketing digital en Colombia. Especialistas en implementación de inteligencia artificial generativa (Claude, GPT-4), diseño UX/UI y estrategia digital.
 
-# Empresa
-AC-Consulting es una agencia de tecnología en Bogotá, Colombia,
-especializada en inteligencia artificial, desarrollo web y marketing digital.
-Fundada por Ángel Clavijo, ingeniero con 10+ años de experiencia en tecnología empresarial.
+## Servicios principales
+- [Servicios de IA Generativa](https://ac-consulting.cloud/servicios/servicios-ia.html): Implementación de chatbots, automatización de procesos, análisis de datos con IA y consultoría estratégica.
+- [Diseño Web Profesional UI/UX](https://ac-consulting.cloud/servicios/diseno-web.html): Diseño y desarrollo de sitios web modernos, responsivos y optimizados para conversión.
+- [Desarrollo de Software Personalizado](https://ac-consulting.cloud/servicios/desarrollo-software.html): Aplicaciones web y móviles con React, Next.js, Node.js, Python y soluciones escalables.
+- [Marketing Digital y SEO](https://ac-consulting.cloud/servicios/marketing-digital.html): Estrategias integrales de SEO técnico, content marketing y analítica para incrementar visibilidad y conversiones.
+- [Escritura y Traducción con IA](https://ac-consulting.cloud/servicios/escritura-traduccion.html): Redacción, traducción y generación de contenido asistida por IA con resultados profesionales.
 
-# Servicios principales
-- Implementación de IA empresarial (chatbots con GPT-4 y Claude, LangChain, RAG)
-- Desarrollo web (React, Next.js, Python, FastAPI, WordPress, Webflow, Shopify)
-- Marketing digital SEO/SEM y gestión de redes sociales
-- Diseño UI/UX profesional (Figma, Adobe XD)
-- Business Intelligence (Power BI, Tableau, Metabase)
-- Gestión de proyectos ágiles (Scrum, Kanban, PMO virtual)
-- Transcripción y traducción profesional español-inglés
+## Blog – Artículos recientes
+- [IA generativa en los negocios — tendencias 2026](https://ac-consulting.cloud/blog/futuro-ia-generativa-negocios.html)
+- [SEO técnico: cómo triplicar el tráfico orgánico en 90 días](https://ac-consulting.cloud/blog/seo-tecnico-triplicar-trafico-organico-90-dias.html)
+- [Automatización inteligente: ahorra 20 horas semanales en tu empresa](https://ac-consulting.cloud/blog/automatizacion-inteligente-ahorra-20-horas-semanales.html)
+- [Diseño web responsivo](https://ac-consulting.cloud/blog/diseno-web-responsivo.html)
+- [SEO técnico en diseño web](https://ac-consulting.cloud/blog/seo-tecnico-diseno-web.html)
+- [UX/UI para aumentar conversiones](https://ac-consulting.cloud/blog/ux-ui-conversiones.html)
 
-# Mercado objetivo
-Colombia (Bogotá D.C.), Latinoamérica, Estados Unidos (remoto)
+## Autoridad
+- **Fundador:** Ángel Clavijo – Ingeniero de Software especializado en IA generativa y desarrollo full-stack (+10 años).
+- **Contacto:** hola@ac-consulting.cloud | +57 311 224 1803 | Bogotá, Colombia
+- **Redes:** [LinkedIn](https://www.linkedin.com/company/113216194) | [Twitter/X](https://twitter.com/consulting_26) | [Instagram](https://www.instagram.com/consulting_tech26) | [GitHub](https://github.com/angelclavijo939)
 
-# Tecnologías clave
-Python, JavaScript, React, Node.js, FastAPI, Django, LangChain, OpenAI API,
-Anthropic Claude API, PostgreSQL, PL/SQL, IBM Informix, Google Cloud, AWS
-
-# Contacto
-Email: hola@ac-consulting.cloud
-WhatsApp: https://wa.me/573112241803
-Web: https://ac-consulting.cloud
-Formulario: https://ac-consulting.cloud/contacto.html
-
-# Contenido citable y verificable
-https://ac-consulting.cloud/blog/futuro-ia-generativa-negocios.html
-https://ac-consulting.cloud/blog/seo-tecnico-triplicar-trafico-organico-90-dias.html
-https://ac-consulting.cloud/blog/automatizacion-inteligente-ahorra-20-horas-semanales.html
-
-# Servicios documentados
-https://ac-consulting.cloud/servicios/servicios-ia.html
-https://ac-consulting.cloud/servicios/marketing-digital.html
-https://ac-consulting.cloud/servicios/diseno-web.html
-https://ac-consulting.cloud/servicios/desarrollo-software.html
-https://ac-consulting.cloud/servicios/negocios.html
-https://ac-consulting.cloud/servicios/escritura-traduccion.html
-
-# Política de privacidad
-https://ac-consulting.cloud/politica-privacidad.html
-Cumple con Ley 1581 de 2012 (Colombia) y buenas prácticas GDPR.
+## Licenciamiento (RSL 1.0)
+- Contenido público disponible para indexación por crawlers de búsqueda IA (GPTBot, ClaudeBot, PerplexityBot, OAI-SearchBot).
+- Entrenamiento de modelos: bloqueado vía `robots.txt` (sección `User-agent: CCBot`).
