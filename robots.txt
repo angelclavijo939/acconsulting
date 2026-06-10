@@ -1,22 +1,29 @@
+# ============================================================
+# robots.txt — ac-consulting.cloud
+# Actualizado: 2026-06-10
+# ============================================================
+
+# --- Crawlers de IA (permitidos explícitamente) ---
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# --- Entrenamiento de modelos (bloqueado intencionalmente) ---
+User-agent: CCBot
+Disallow: /
+
+# --- Regla general ---
 User-agent: *
-Allow: /
-Disallow: /?
-Disallow: /*?s=
-Disallow: /search
-Disallow: /buscar
-Disallow: /*?search=
-Disallow: /*utm_*
+Disallow: /admin/
+Disallow: /private/
 
-# Google
-User-agent: Googlebot
-Allow: /
-
-# Bing
-User-agent: Bingbot
-Allow: /
-
-# Sitemap
+# --- Sitemap ---
 Sitemap: https://ac-consulting.cloud/sitemap.xml
-
-# Crawl delay
-Crawl-delay: 1
