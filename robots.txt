@@ -1,9 +1,8 @@
-# ============================================================
-# robots.txt — ac-consulting.cloud
-# Actualizado: 2026-06-10
-# ============================================================
+# robots.txt - AC-Consulting
+# Última actualización: 9 de junio de 2026
 
-# --- Crawlers de IA (permitidos explícitamente) ---
+# ===== SECCIÓN AI CRAWLERS (PERMITIR) =====
+
 User-agent: GPTBot
 Allow: /
 
@@ -16,14 +15,48 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-# --- Entrenamiento de modelos (bloqueado intencionalmente) ---
 User-agent: CCBot
 Disallow: /
 
-# --- Regla general ---
+# ===== SECCIÓN GENERAL =====
+
 User-agent: *
+Allow: /
+
+# Bloquear directorios administrativos
 Disallow: /admin/
 Disallow: /private/
+Disallow: /_next/
+Disallow: /.git/
+Disallow: /.env/
 
-# --- Sitemap ---
+# Bloquear archivos de sistema
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /node_modules/
+
+# Bloquear búsqueda interna
+Disallow: /search?
+Disallow: /*?*sort=
+
+# Permitir assets
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.svg$
+Allow: /*.webp$
+Allow: /*.png$
+Allow: /*.jpg$
+
+# ===== CRAWL DELAY =====
+
+Crawl-delay: 1
+Request-rate: 1/1s
+
+# ===== SITEMAP =====
+
 Sitemap: https://ac-consulting.cloud/sitemap.xml
+
+# ===== NOTAS =====
+# - Los crawlers de IA tienen acceso completo al contenido
+# - CCBot (Common Crawl) está bloqueado si no deseas entrenamiento de LLMs
+# - Ajusta según tus necesidades
