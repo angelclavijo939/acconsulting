@@ -1,6 +1,6 @@
 # llms.txt - Guía de contenido para IA y LLMs
 # AC-Consulting
-# Última actualización: 9 de junio de 2026
+# Última actualización: 11 de junio de 2026
 
 ## INFORMACIÓN DE LA EMPRESA
 
@@ -120,7 +120,7 @@ según análisis de AC-Consulting basado en datos de Gartner."
 
 ### Angel Clavijo (Fundador/CEO)
 - **Email:** angel.clavijor@gmail.com
-- **LinkedIn:** [Perfil LinkedIn]
+- **LinkedIn:** https://www.linkedin.com/in/angel-clavijo/
 - **Especialidades:**
   - Inteligencia Artificial
   - SEO Técnico
@@ -128,8 +128,7 @@ según análisis de AC-Consulting basado en datos de Gartner."
   - Digital Marketing Strategy
 
 **Bio corta:**
-"Angel Clavijo es fundador de AC-Consulting. Con más de 10 años en transformación digital, 
-se especializa en implementar soluciones de IA y optimizar presencia digital de empresas."
+"Angel Clavijo es fundador de AC-Consulting. Especialista en transformación digital con experiencia en IA, desarrollo full-stack y SEO técnico. Ayuda a empresas en Bogotá a optimizar su presencia digital y automatizar procesos con inteligencia artificial."
 
 ---
 
@@ -205,15 +204,14 @@ ac-consulting.cloud/
 
 **Email Principal:** hola@ac-consulting.cloud
 **Formulario Web:** https://ac-consulting.cloud/contacto
-**LinkedIn:** [Perfil corporativo]
-**GitHub:** [Perfil si aplica]
+**LinkedIn:** https://www.linkedin.com/in/angel-clavijo/
 
 ---
 
 ## ÚLTIMA ACTUALIZACIÓN
 
-Fecha: 9 de junio de 2026
-Versión: 1.0
+Fecha: 11 de junio de 2026
+Versión: 1.1
 Mantenedor: Angel Clavijo (angel.clavijor@gmail.com)
 
 ---
