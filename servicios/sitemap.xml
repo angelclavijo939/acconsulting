@@ -1,95 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <!--
-    SITEMAP DEL BLOG - ac-consulting.cloud
+    SITEMAP DE SERVICIOS - ac-consulting.cloud
     Generado: 2026-06-10
-    Total estimado: 124 URLs
-    NOTA: Este sitemap contiene 2 advertencias en GSC por URLs con redirect no encontrado.
-    Acción requerida: revisar y corregir las URLs con redirección rota antes de re-subir.
+    Total: 45 URLs
+    Estado GSC: Activo, 0 errores, 0 advertencias ✓
   -->
 
-  <!-- Página principal del blog -->
+  <!-- Página principal de servicios -->
   <url>
-    <loc>https://ac-consulting.cloud/blog/</loc>
+    <loc>https://ac-consulting.cloud/servicios/</loc>
     <lastmod>2026-06-08</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Servicios principales -->
+  <url>
+    <loc>https://ac-consulting.cloud/servicios/consultoria-empresarial/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Categorías del blog -->
   <url>
-    <loc>https://ac-consulting.cloud/blog/category/consultoria/</loc>
+    <loc>https://ac-consulting.cloud/servicios/transformacion-digital/</loc>
     <lastmod>2026-06-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ac-consulting.cloud/blog/category/tecnologia/</loc>
-    <lastmod>2026-06-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ac-consulting.cloud/blog/category/estrategia/</loc>
-    <lastmod>2026-06-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ac-consulting.cloud/blog/category/negocios/</loc>
-    <lastmod>2026-06-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!--
-    ============================================================
-    ARTÍCULOS DEL BLOG (120 URLs - representación estructural)
-    Reemplazar con las URLs reales exportadas de tu CMS/base de datos
-    ============================================================
-  -->
-
-  <!-- Artículos recientes (ejemplo estructural) -->
-  <url>
-    <loc>https://ac-consulting.cloud/blog/transformacion-digital-empresas-2026/</loc>
-    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ac-consulting.cloud/blog/estrategias-consultoria-ia/</loc>
-    <lastmod>2026-05-28</lastmod>
+    <loc>https://ac-consulting.cloud/servicios/gestion-proyectos/</loc>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ac-consulting.cloud/blog/gestion-proyectos-agile/</loc>
+    <loc>https://ac-consulting.cloud/servicios/estrategia-negocio/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ac-consulting.cloud/servicios/auditoria-procesos/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ac-consulting.cloud/servicios/cloud-solutions/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ac-consulting.cloud/servicios/inteligencia-artificial/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ac-consulting.cloud/servicios/capacitacion/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Sub-servicios -->
+  <url>
+    <loc>https://ac-consulting.cloud/servicios/consultoria-empresarial/pymes/</loc>
     <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ac-consulting.cloud/blog/optimizacion-procesos-empresariales/</loc>
+    <loc>https://ac-consulting.cloud/servicios/consultoria-empresarial/grandes-empresas/</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ac-consulting.cloud/servicios/transformacion-digital/diagnostico/</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ac-consulting.cloud/servicios/transformacion-digital/implementacion/</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ac-consulting.cloud/servicios/cloud-solutions/migracion/</loc>
     <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ac-consulting.cloud/blog/cloud-computing-pymes/</loc>
-    <lastmod>2026-05-10</lastmod>
+    <loc>https://ac-consulting.cloud/servicios/cloud-solutions/seguridad/</loc>
+    <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
 
   <!--
-    INSTRUCCIÓN IMPORTANTE:
-    Las 2 URLs con advertencia en GSC (redirect no encontrado) NO deben incluirse aquí.
-    Una vez corregidas las redirecciones rotas, agregar las URLs corregidas.
-
-    Para completar este sitemap con las 124 URLs reales, exportar el listado completo
-    desde tu CMS (WordPress, Webflow, etc.) y reemplazar las entradas de ejemplo.
+    INSTRUCCIÓN:
+    Este sitemap tiene 45 URLs en GSC. Las entradas anteriores son estructurales.
+    Para completarlo con las 45 URLs exactas, exportar el listado real del CMS
+    y reemplazar/completar las entradas de ejemplo.
+    Estado actual en GSC: ✓ Sin errores ni advertencias
   -->
 
 </urlset>
