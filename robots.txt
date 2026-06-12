@@ -29,18 +29,11 @@ Disallow: /private/
 Disallow: /_next/
 Disallow: /.git/
 Disallow: /.env/
-
-# Bloquear archivos de sistema (excepto sitemaps)
-Allow: /sitemap.xml
-Allow: /sitemap_index.xml
-Allow: /sitemap-index.xml
-Allow: /servicios/sitemap.xml
-Allow: /blog/sitemap.xml
-Allow: /services/sitemap.xml
-Allow: /sitemap_cl.xml
-Disallow: /*.json$
-Disallow: /*.xml$
 Disallow: /node_modules/
+
+# Bloquear archivos de sistema específicos
+Disallow: /package.json
+Disallow: /package-lock.json
 
 # Bloquear búsqueda interna
 Disallow: /search?
@@ -53,6 +46,7 @@ Allow: /*.svg$
 Allow: /*.webp$
 Allow: /*.png$
 Allow: /*.jpg$
+Allow: /*.xml$
 
 # ===== CRAWL DELAY =====
 
@@ -66,4 +60,3 @@ Sitemap: https://ac-consulting.cloud/sitemap.xml
 # ===== NOTAS =====
 # - Los crawlers de IA tienen acceso completo al contenido
 # - CCBot (Common Crawl) está bloqueado si no deseas entrenamiento de LLMs
-# - Los Allow de sitemaps deben ir ANTES del Disallow: /*.xml$
