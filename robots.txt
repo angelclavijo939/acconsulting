@@ -24,7 +24,6 @@ User-agent: *
 Allow: /
 
 # Bloquear directorios administrativos
-Disallow: /admin/
 Disallow: /private/
 Disallow: /_next/
 Disallow: /.git/
