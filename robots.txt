@@ -1,8 +1,15 @@
 # robots.txt - AC-Consulting
 # Última actualización: 11 de junio de 2026
 
-# ===== SECCIÓN AI CRAWLERS (PERMITIR) =====
+# ===== PERMITIR SITEMAPS PRIMERO (antes de bloquear *.xml) =====
+Allow: /sitemap.xml
+Allow: /sitemap_index.xml
+Allow: /sitemap-index.xml
+Allow: /servicios/sitemap.xml
+Allow: /blog/sitemap.xml
+Allow: /services/sitemap.xml
 
+# ===== SECCIÓN AI CRAWLERS (PERMITIR) =====
 User-agent: GPTBot
 Allow: /
 
@@ -28,9 +35,8 @@ Disallow: /private/
 Disallow: /_next/
 Disallow: /.git/
 Disallow: /.env/
-Disallow: /node_modules/
 
-# Bloquear archivos de sistema específicos
+# Bloquear archivos de sistema
 Disallow: /package.json
 Disallow: /package-lock.json
 
@@ -55,7 +61,10 @@ Request-rate: 1/1s
 # ===== SITEMAP =====
 
 Sitemap: https://ac-consulting.cloud/sitemap.xml
+Sitemap: https://ac-consulting.cloud/servicios/sitemap.xml
+Sitemap: https://ac-consulting.cloud/blog/sitemap.xml
 
 # ===== NOTAS =====
 # - Los crawlers de IA tienen acceso completo al contenido
 # - CCBot (Common Crawl) está bloqueado si no deseas entrenamiento de LLMs
+# - Los Allow de sitemaps DEBEN ir ANTES del Disallow: /*.xml$
