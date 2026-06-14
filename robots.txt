@@ -1,15 +1,21 @@
 # robots.txt - AC-Consulting
-# Última actualización: 11 de junio de 2026
+# Última actualización: 14 de junio de 2026
+# Optimizado para Google, crawlers de IA y rendimiento de búsqueda
 
-# ===== PERMITIR SITEMAPS PRIMERO (antes de bloquear *.xml) =====
-Allow: /sitemap.xml
-Allow: /sitemap_index.xml
-Allow: /sitemap-index.xml
-Allow: /servicios/sitemap.xml
-Allow: /blog/sitemap.xml
-Allow: /services/sitemap.xml
+# ===== SITEMAPS =====
+Sitemap: https://ac-consulting.cloud/sitemap.xml
+Sitemap: https://ac-consulting.cloud/servicios/sitemap.xml
+Sitemap: https://ac-consulting.cloud/blog/sitemap.xml
 
-# ===== SECCIÓN AI CRAWLERS (PERMITIR) =====
+# ===== GOOGLEBOT (EXPLÍCITO) =====
+User-agent: Googlebot
+Allow: /
+Disallow: /private/
+Disallow: /_next/
+Disallow: /search?
+Disallow: /*?sort=
+
+# ===== CRAWLERS DE IA (PERMITIR ACCESO COMPLETO) =====
 User-agent: GPTBot
 Allow: /
 
@@ -23,48 +29,21 @@ User-agent: PerplexityBot
 Allow: /
 
 User-agent: CCBot
-Disallow: /
-
-# ===== SECCIÓN GENERAL =====
-
-User-agent: *
 Allow: /
 
-# Bloquear directorios administrativos
+User-agent: anthropic-ai
+Allow: /
+
+# ===== TODOS LOS DEMÁS CRAWLERS =====
+User-agent: *
+Allow: /
 Disallow: /private/
 Disallow: /_next/
 Disallow: /.git/
 Disallow: /.env/
-
-# Bloquear archivos de sistema
 Disallow: /package.json
 Disallow: /package-lock.json
-
-# Bloquear búsqueda interna
 Disallow: /search?
-Disallow: /*?*sort=
+Disallow: /*?sort=
 
-# Permitir assets
-Allow: /*.js$
-Allow: /*.css$
-Allow: /*.svg$
-Allow: /*.webp$
-Allow: /*.png$
-Allow: /*.jpg$
-Allow: /*.xml$
-
-# ===== CRAWL DELAY =====
-
-Crawl-delay: 1
-Request-rate: 1/1s
-
-# ===== SITEMAP =====
-
-Sitemap: https://ac-consulting.cloud/sitemap.xml
-Sitemap: https://ac-consulting.cloud/servicios/sitemap.xml
-Sitemap: https://ac-consulting.cloud/blog/sitemap.xml
-
-# ===== NOTAS =====
-# - Los crawlers de IA tienen acceso completo al contenido
-# - CCBot (Common Crawl) está bloqueado si no deseas entrenamiento de LLMs
-# - Los Allow de sitemaps DEBEN ir ANTES del Disallow: /*.xml$
+# ===== FIN DE ROBOTS.TXT =====
