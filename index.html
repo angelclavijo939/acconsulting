@@ -632,6 +632,7 @@
 
 
 
+  <link rel="preload" as="image" href="/images/hero.webp" fetchpriority="high" />
   <link rel="stylesheet" href="styles.css" />
   <style>
     .blog-card-link {
@@ -768,7 +769,9 @@
 
   <!-- HERO -->
   <section class="hero" id="inicio">
-    <div class="hero-bg"></div>
+    <div class="hero-bg">
+      <img src="/images/hero.webp" alt="" width="1920" height="1280" fetchpriority="high" />
+    </div>
     <div class="hero-overlay"></div>
     <div class="orbital">
       <div class="orbit orbit-1"><div class="dot"></div></div>
