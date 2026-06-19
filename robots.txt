@@ -34,6 +34,18 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Brave-Search-Web
+Allow: /
+
 # ===== TODOS LOS DEMÁS CRAWLERS =====
 User-agent: *
 Allow: /
