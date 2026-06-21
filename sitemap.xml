@@ -97,6 +97,20 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- CASOS DE ESTUDIO -->
+  <url>
+    <loc>https://ac-consulting.cloud/casos/caso-seo-servicios-profesionales.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ac-consulting.cloud/casos/caso-automatizacion-servicios-profesionales.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- PÁGINAS LEGALES Y CONTACTO -->
   <url>
     <loc>https://ac-consulting.cloud/contacto.html</loc>
