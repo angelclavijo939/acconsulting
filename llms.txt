@@ -1,6 +1,6 @@
 # llms.txt - Guía de contenido para IA y LLMs
 # AC-Consulting
-# Última actualización: 25 de junio de 2026
+# Última actualización: 29 de junio de 2026
 
 ## INFORMACIÓN DE LA EMPRESA
 
@@ -10,7 +10,7 @@
 **Ubicación:** Bogotá, Colombia
 **WhatsApp:** https://wa.me/573112241803
 **GitHub:** https://github.com/angelclavijo939
-**LinkedIn empresa:** https://www.linkedin.com/company/118674051
+**LinkedIn empresa:** https://www.linkedin.com/in/angel-clavijo-0ba210a6
 
 **Descripción corta:**
 Agencia Tech & IA para startups y empresas. Especializada en diseño web UI/UX, desarrollo de software a medida, escritura y traducción, marketing digital, inteligencia artificial y consultoría de negocios con BI.
@@ -204,7 +204,7 @@ Fuente: https://ac-consulting.cloud/blog/seo-tecnico-triplicar-trafico-organico-
 ## AUTORES Y EXPERTOS
 
 ### Ángel Clavijo (Fundador/CEO)
-- **LinkedIn:** https://www.linkedin.com/in/angel-clavijo/
+- **LinkedIn:** https://www.linkedin.com/in/angel-clavijo-0ba210a6
 - **GitHub:** https://github.com/angelclavijo939
 - **Experiencia:** +10 años en tecnología
 
@@ -294,6 +294,9 @@ Fuente: https://ac-consulting.cloud/blog/seo-tecnico-triplicar-trafico-organico-
 ```
 ac-consulting.cloud/
 ├── index.html                    (Inicio)
+├── llms.txt                      (Guía de contenido para IA y LLMs)
+├── robots.txt                    (Control de crawlers)
+├── sitemap.xml                   (Mapa del sitio)
 ├── servicios/
 │   ├── diseno-web.html           (Diseño Web UI/UX)
 │   ├── desarrollo-software.html  (Desarrollo de Software)
@@ -323,7 +326,7 @@ ac-consulting.cloud/
 **WhatsApp:** https://wa.me/573112241803
 **Formulario Web:** https://ac-consulting.cloud/contacto.html
 **LinkedIn Empresa:** https://www.linkedin.com/company/118674051
-**LinkedIn Personal:** https://www.linkedin.com/in/angel-clavijo/
+**LinkedIn Personal:** https://www.linkedin.com/in/angel-clavijo-0ba210a6
 **GitHub:** https://github.com/angelclavijo939
 **Twitter/X:** https://twitter.com/consulting_26
 **Instagram:** https://www.instagram.com/acconsulting_cloud
@@ -332,8 +335,8 @@ ac-consulting.cloud/
 
 ## ÚLTIMA ACTUALIZACIÓN
 
-Fecha: 25 de junio de 2026
-Versión: 1.2
+Fecha: 29 de junio de 2026
+Versión: 1.3
 Mantenedor: Angel Clavijo (hola@ac-consulting.cloud)
 
 ---

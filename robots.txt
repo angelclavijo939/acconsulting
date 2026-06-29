@@ -1,5 +1,5 @@
 # robots.txt - AC-Consulting
-# Última actualización: 20 de junio de 2026
+# Última actualización: 29 de junio de 2026
 # Optimizado para Google, crawlers de IA y rendimiento de búsqueda
 
 # ===== SITEMAPS =====
@@ -21,10 +21,16 @@ Disallow: /*?sort=
 User-agent: GPTBot
 Allow: /
 
+User-agent: ChatGPT-User
+Allow: /
+
 User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
 Allow: /
 
 User-agent: PerplexityBot
@@ -47,6 +53,19 @@ Allow: /
 
 User-agent: Brave-Search-Web
 Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# ===== CRAWLERS DE IA (BLOQUEAR — scrapers agresivos) =====
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
 
 # ===== TODOS LOS DEMÁS CRAWLERS =====
 User-agent: *
