@@ -8,6 +8,11 @@
       "source": "/index.html",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/recursos/automatizacion-inteligente-ahorra-20-horas-semanales.html",
+      "destination": "/blog/automatizacion-inteligente-ahorra-20-horas-semanales.html",
+      "permanent": true
     }
   ],
   "headers": [
