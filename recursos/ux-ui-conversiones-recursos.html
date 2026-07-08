@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="icon" href="/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diseño UX/UI que aumenta conversiones 30-50% (guía completa) | AC-Consulting</title>
+  <meta name="description" content="Aumenta conversiones 30-50% con UX/UI efectivo: wireframes probados, psicología del color, CTAs que funcionan. Guía completa con casos reales." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://ac-consulting.cloud/blog/ux-ui-conversiones.html" />
+  <meta property="og:title" content="UX/UI Moderno: Cómo Convertir Visitantes en Clientes 2025 | AC-Consulting" />
+  <meta property="og:description" content="Guía práctica de UX/UI orientado a conversiones: jerarquía visual, CTAs, psicología del usuario y pruebas que funcionan en 2025." />
+  <meta property="og:url" content="https://ac-consulting.cloud/blog/ux-ui-conversiones.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://ac-consulting.cloud/images/og-image.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="UX/UI Moderno: Cómo Convertir Visitantes en Clientes 2025" />
+  <meta name="twitter:description" content="Principios de UX/UI que realmente aumentan conversiones. Guía práctica con ejemplos reales." />
+  <meta name="twitter:image" content="https://ac-consulting.cloud/images/og-image.webp" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "UX/UI Moderno: Cómo Convertir Visitantes en Clientes 2025",
+    "description": "Guía práctica de UX/UI orientado a conversiones: jerarquía visual, CTAs, psicología del usuario y pruebas que funcionan en 2025.",
+    "image": "https://ac-consulting.cloud/images/og-image.webp",
+    "author": {
+      "@type": "Person",
+      "name": "Ángel Clavijo",
+      "url": "https://ac-consulting.cloud"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "AC-Consulting",
+      "url": "https://ac-consulting.cloud",
+      "logo": { "@type": "ImageObject", "url": "https://ac-consulting.cloud/logo.png" }
+    },
+    "datePublished": "2025-05-12",
+    "dateModified": "2025-05-12",
+    "mainEntityOfPage": "https://ac-consulting.cloud/blog/ux-ui-conversiones.html"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://ac-consulting.cloud/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://ac-consulting.cloud/#blog" },
+      { "@type": "ListItem", "position": 3, "name": "UX/UI Moderno: Cómo Convertir Visitantes en Clientes", "item": "https://ac-consulting.cloud/blog/ux-ui-conversiones.html" }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    .article-hero { padding: 60px 0 40px; }
+    .article-hero .back-btn { display: inline-block; margin-bottom: 24px; color: var(--accent); text-decoration: none; font-size: 0.95rem; }
+    .article-hero .back-btn:hover { text-decoration: underline; }
+    .article-meta { display: flex; gap: 20px; align-items: center; color: var(--text-muted); font-size: 0.88rem; margin: 16px 0 32px; flex-wrap: wrap; }
+    .article-meta .tag { background: rgba(204,85,0,0.15); color: var(--accent); padding: 4px 12px; border-radius: 20px; font-size: 0.82rem; font-weight: 600; }
+    .article-hero-img { width: 100%; max-height: 480px; object-fit: cover; border-radius: var(--radius-lg); margin-bottom: 48px; }
+    .article-body { max-width: 760px; margin: 0 auto; color: var(--text-muted); line-height: 1.85; font-size: 1.05rem; }
+    .article-body h2 { font-family: var(--font-display); font-size: 1.7rem; color: var(--white); margin: 48px 0 16px; }
+    .article-body h3 { font-size: 1.15rem; color: var(--white); font-weight: 600; margin: 32px 0 12px; }
+    .article-body p { margin-bottom: 20px; }
+    .article-body ul, .article-body ol { margin: 12px 0 20px 24px; }
+    .article-body li { margin-bottom: 10px; }
+    .article-body strong { color: var(--white); }
+    .article-body .highlight-box { background: var(--card-bg); border-left: 4px solid var(--accent); padding: 20px 24px; border-radius: 0 var(--radius-md) var(--radius-md) 0; margin: 28px 0; }
+    .article-body .highlight-box p { margin: 0; }
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); gap: 16px; margin: 24px 0; }
+    .stat-box { background: var(--card-bg); border: 1px solid rgba(204,85,0,0.2); border-radius: var(--radius-md); padding: 20px; text-align: center; }
+    .stat-box .stat-num { font-size: 2rem; font-weight: 700; color: var(--accent); display: block; }
+    .stat-box .stat-label { font-size: 0.85rem; color: var(--text-muted); margin-top: 6px; }
+    .article-cta { background: rgba(204,85,0,0.1); border: 1px solid rgba(204,85,0,0.3); border-radius: var(--radius-lg); padding: 40px; text-align: center; margin: 60px 0; }
+    .article-cta h3 { font-family: var(--font-display); font-size: 1.6rem; color: var(--white); margin-bottom: 12px; }
+    .article-cta p { color: var(--text-muted); margin-bottom: 24px; }
+    .related-articles { margin: 60px 0 80px; }
+    .related-articles h3 { font-family: var(--font-display); font-size: 1.4rem; color: var(--white); margin-bottom: 24px; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap: 20px; }
+    .related-card { background: var(--card-bg); border-radius: var(--radius-md); padding: 24px; border: 1px solid rgba(255,255,255,0.06); text-decoration: none; display: block; transition: border-color 0.2s; }
+    .related-card:hover { border-color: rgba(204,85,0,0.4); }
+    .related-card h4 { color: var(--white); font-size: 1rem; margin-bottom: 8px; }
+    .related-card p { color: var(--text-muted); font-size: 0.88rem; margin: 0; }
+  </style>
+</head>
+<body>
+  <header class="header scrolled" id="header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo"><span class="logo-mark">A</span><span class="logo-text">C-Consulting</span></a>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      <nav class="nav" id="nav">
+        <a href="../index.html" class="nav-link">Inicio</a>
+        <a href="../index.html#servicios" class="nav-link scroll-link">Servicios</a>
+        <a href="../index.html#quien-soy" class="nav-link">Quién soy</a>
+        <a href="../index.html#blog" class="nav-link active scroll-link">Blog</a>
+        <a href="../contacto.html" class="nav-link nav-cta">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="article-hero">
+    <div class="container">
+      <a href="../index.html#blog" class="back-btn">← Volver al Blog</a>
+      <div class="article-meta">
+        <span class="tag">UX/UI</span>
+        <span>12 de mayo, 2025</span>
+        <span>Por Ángel Clavijo</span>
+        <span>9 min de lectura</span>
+      </div>
+      <h1 class="section-title" style="text-align:left;max-width:760px;">UX/UI Moderno: Cómo <em>Convertir Visitantes</em> en Clientes</h1>
+      <img src="https://ac-consulting.cloud/images/og-image.webp"
+        alt="Diseño UX/UI moderno para aumentar conversiones"
+        class="article-hero-img"
+        loading="eager"
+      />
+    </div>
+  </section>
+
+  <section style="padding: 0 0 80px;">
+    <div class="container">
+      <div class="article-body">
+
+        <p>Un sitio web bonito que no convierte es un gasto, no una inversión. El verdadero objetivo del diseño UX/UI no es ganar premios de diseño — es guiar al visitante desde su primera visita hasta que toma acción: compra, llena un formulario, llama, agenda una reunión. En este artículo te enseñamos los principios que realmente mueven la aguja.</p>
+
+        <div class="stat-grid">
+          <div class="stat-box">
+            <span class="stat-num">88%</span>
+            <span class="stat-label">de usuarios no vuelve tras una mala experiencia de usuario</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-num">200%</span>
+            <span class="stat-label">de aumento en conversiones con UX bien diseñado</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-num">15s</span>
+            <span class="stat-label">es el tiempo promedio para causar primera impresión</span>
+          </div>
+        </div>
+
+        <h2>UX vs UI: la diferencia que importa</h2>
+
+        <p>Antes de entrar en técnicas, aclaremos los términos. <strong>UI (User Interface)</strong> es lo que el usuario ve: colores, tipografía, botones, iconos, layout. <strong>UX (User Experience)</strong> es lo que el usuario siente: ¿fue fácil encontrar lo que buscaba? ¿El proceso de compra fue fluido? ¿Tuvo que pensar mucho?</p>
+
+        <p>Puedes tener una UI hermosa con una UX terrible — menús confusos, formularios largos, páginas que cargan lento. Y al revés: una UX perfecta con una UI anticuada pierde credibilidad. El mejor diseño integra ambas disciplinas desde el inicio.</p>
+
+        <div class="highlight-box">
+          <p><strong>Regla fundamental:</strong> Si el usuario tiene que pensar, algo está mal. El buen diseño UX es invisible — el usuario simplemente logra lo que vino a hacer sin fricción.</p>
+        </div>
+
+        <h2>Jerarquía visual: guía los ojos del usuario</h2>
+
+        <p>La jerarquía visual es la organización de elementos según su importancia. El usuario no lee una página web como lee un libro — escanea en patrones en F o Z. Tu diseño debe aprovechar eso.</p>
+
+        <h3>Principios de jerarquía visual efectiva:</h3>
+        <ul>
+          <li><strong>Tamaño:</strong> Lo más importante, más grande. Simple y efectivo.</li>
+          <li><strong>Contraste:</strong> El elemento que más contrasta con el fondo llama la atención primero. Por eso los CTAs deben ser del color de mayor contraste.</li>
+          <li><strong>Espacio en blanco:</strong> El espacio vacío no es espacio desperdiciado — es lo que hace que los elementos importantes respiren y destaquen.</li>
+          <li><strong>Color:</strong> Usa un color de acento para elementos de acción. Más de un color de acento compite por la atención y anula el efecto.</li>
+          <li><strong>Posición:</strong> Los usuarios escanean de arriba a abajo, izquierda a derecha (en culturas occidentales). Lo que va arriba a la izquierda se ve primero.</li>
+        </ul>
+
+        <h2>El above-the-fold: los primeros 5 segundos deciden todo</h2>
+
+        <p>El "above-the-fold" es lo que el usuario ve sin hacer scroll. Es tu única oportunidad de responder tres preguntas en menos de 5 segundos:</p>
+
+        <ol>
+          <li>¿Qué hace este sitio / empresa?</li>
+          <li>¿Esto es para mí?</li>
+          <li>¿Qué hago ahora?</li>
+        </ol>
+
+        <p>Si el usuario no puede responder estas tres preguntas de inmediato, abandona. Los elementos que deben estar siempre above-the-fold:</p>
+
+        <ul>
+          <li><strong>Propuesta de valor clara:</strong> Una sola frase que diga qué haces y para quién. No genérica ("soluciones digitales"), sino específica ("Diseño web que convierte visitantes en clientes para empresas en Colombia").</li>
+          <li><strong>CTA primario visible:</strong> Un botón de acción claro. "Solicitar cotización", "Ver servicios", "Hablar con un experto".</li>
+          <li><strong>Prueba de credibilidad:</strong> Logos de clientes, número de proyectos, testimonios cortos — algo que valide que eres real y confiable.</li>
+        </ul>
+
+        <h2>CTAs que convierten: la ciencia detrás del botón</h2>
+
+        <p>El Call to Action (CTA) es el elemento más crítico de cualquier página de conversión. Un cambio en el texto, color o posición puede duplicar los clics. Lo que funciona:</p>
+
+        <h3>Texto del CTA:</h3>
+        <ul>
+          <li><strong>Orientado a beneficio, no a acción:</strong> "Obtener mi análisis gratis" convierte más que "Enviar" o "Contactar".</li>
+          <li><strong>Primera persona:</strong> "Quiero mejorar mi sitio" convierte hasta 90% más que "Mejorar su sitio".</li>
+          <li><strong>Urgencia específica:</strong> "Reservar mi lugar (quedan 3)" si aplica — pero solo si es real.</li>
+          <li><strong>Reduce el riesgo percibido:</strong> "Empezar gratis — sin tarjeta de crédito" elimina la fricción del compromiso.</li>
+        </ul>
+
+        <h3>Diseño del CTA:</h3>
+        <ul>
+          <li>Color que contraste con el fondo y el resto de la página</li>
+          <li>Tamaño mínimo de 44x44px (especialmente en móvil)</li>
+          <li>Espacio en blanco alrededor del botón — no lo rodees de texto</li>
+          <li>Un solo CTA primario por sección (el secundario puede existir pero más discreto)</li>
+        </ul>
+
+        <h2>Formularios: donde mueren las conversiones</h2>
+
+        <p>Los formularios son el mayor punto de abandono en cualquier sitio. Cada campo adicional reduce la tasa de conversión. Las reglas de oro:</p>
+
+        <ul>
+          <li><strong>Pide solo lo imprescindible:</strong> ¿De verdad necesitas el teléfono en el primer contacto? ¿La empresa? ¿El cargo? Cada campo innecesario es una conversión perdida.</li>
+          <li><strong>Divide formularios largos en pasos:</strong> Un formulario de 10 campos en un paso asusta. Los mismos 10 campos en 3 pasos con una barra de progreso se sienten manejables.</li>
+          <li><strong>Valida en tiempo real:</strong> Muestra los errores campo por campo mientras el usuario escribe, no solo al enviar.</li>
+          <li><strong>Labels siempre visibles:</strong> El placeholder no reemplaza al label — desaparece cuando el usuario empieza a escribir.</li>
+          <li><strong>Mensaje de éxito claro:</strong> Después de enviar, confirma qué pasó y qué sigue. "Te contactaremos en menos de 24 horas" elimina la ansiedad post-envío.</li>
+        </ul>
+
+        <h2>Psicología de la confianza: por qué los usuarios no convierten</h2>
+
+        <p>El visitante no te conoce. Su instinto natural es desconfianza. Tu diseño debe activamente eliminar esa barrera:</p>
+
+        <h3>Elementos que generan confianza:</h3>
+        <ul>
+          <li><strong>Testimonios reales con foto y nombre completo:</strong> "Excelente servicio" de "Juan C." no convence. Una foto, nombre completo, empresa y un testimonio específico sí.</li>
+          <li><strong>Logos de clientes conocidos:</strong> El efecto de asociación es inmediato. Si empresa reconocida confió en ti, el usuario nuevo también puede hacerlo.</li>
+          <li><strong>Números concretos:</strong> "Más de 50 proyectos entregados" y "4.9/5 en satisfacción" son más convincentes que "experiencia comprobada".</li>
+          <li><strong>Garantías explícitas:</strong> "30 días de soporte gratuito", "Si no estás satisfecho, te devolvemos el dinero". Reduce el riesgo percibido.</li>
+          <li><strong>HTTPS y sellos de seguridad:</strong> Visible especialmente en formularios y páginas de pago.</li>
+          <li><strong>Cara humana:</strong> Una foto real del equipo o fundador humaniza la empresa. Los usuarios compran a personas, no a logos.</li>
+        </ul>
+
+        <h2>Pruebas de usabilidad: cómo saber si tu diseño funciona</h2>
+
+        <p>El mayor error en diseño es asumir que sabes cómo piensan tus usuarios. <strong>No lo sabes.</strong> La única manera de saberlo es observar a usuarios reales usando tu sitio.</p>
+
+        <h3>Métodos accesibles para cualquier presupuesto:</h3>
+        <ul>
+          <li><strong>Prueba de los 5 segundos:</strong> Muestra la homepage a alguien 5 segundos. Pregunta: ¿Qué hace este sitio? ¿Para quién es? ¿Qué harías ahora? Sus respuestas revelan si tu propuesta de valor es clara.</li>
+          <li><strong>Think-aloud testing:</strong> Pide a 5 personas que completen una tarea en tu sitio mientras verbalizan lo que piensan. Con solo 5 usuarios encuentras el 85% de los problemas de usabilidad.</li>
+          <li><strong>Hotjar o Microsoft Clarity:</strong> Mapas de calor y grabaciones de sesiones reales. Gratuitos. Te muestran exactamente dónde hacen clic y hasta dónde hacen scroll.</li>
+          <li><strong>A/B testing:</strong> Prueba dos versiones de un elemento (título, CTA, imagen) con tráfico real. Convierte con datos, no con opiniones.</li>
+        </ul>
+
+        <div class="highlight-box">
+          <p><strong>Dato:</strong> Jakob Nielsen, el padre de la usabilidad web, documentó que con apenas 5 usuarios en pruebas de usabilidad se identifican el 85% de los problemas. No necesitas una muestra masiva para validar tu diseño.</p>
+        </div>
+
+        <h2>El proceso UX que realmente funciona</h2>
+
+        <p>En AC-Consulting aplicamos un proceso de diseño en cuatro fases que garantiza resultados:</p>
+
+        <ol>
+          <li><strong>Descubrimiento:</strong> Análisis de tu negocio, usuarios objetivo, competencia y objetivos de conversión. Sin este paso, el diseño es decoración.</li>
+          <li><strong>Arquitectura de información:</strong> Definimos la estructura del sitio — qué páginas existen, cómo se navega, qué jerarquía tiene el contenido.</li>
+          <li><strong>Prototipo en Figma:</strong> Wireframes de baja fidelidad para validar estructura, luego prototipo interactivo de alta fidelidad para validar la experiencia completa antes de escribir una línea de código.</li>
+          <li><strong>Iteración con datos:</strong> Post-lanzamiento, medimos con Analytics, Hotjar y pruebas A/B. El diseño no termina en el lanzamiento.</li>
+        </ol>
+
+        <div class="article-cta">
+          <h3>¿Tu sitio convierte lo que debería?</h3>
+          <p>Revisamos tu sitio actual, identificamos los puntos de abandono y te proponemos mejoras UX/UI concretas con impacto directo en conversiones.</p>
+          <p style="margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(0,0,0,0.1); color: var(--text-muted); font-size: 0.95rem;">💡 <strong>Lleva estos principios a tu sitio:</strong> <a href="../servicios/diseno-web.html" style="color: var(--accent); font-weight: 600;">Consulta sobre Diseño Web Profesional →</a></p>
+          <a href="../contacto.html" class="btn btn-primary">Solicitar revisión UX gratuita</a>
+        </div>
+
+        <div class="related-articles">
+          <h3>Artículos relacionados</h3>
+          <div class="related-grid">
+            <a href="diseno-web-responsivo.html" class="related-card">
+              <h4>Diseño Web Responsivo: Guía Completa</h4>
+              <p>Por qué el diseño mobile-first es crítico en 2025.</p>
+            </a>
+            <a href="seo-tecnico-diseno-web.html" class="related-card">
+              <h4>SEO Técnico en Diseño Web</h4>
+              <p>Cómo optimizar tu sitio para Google desde el diseño.</p>
+            </a>
+            <a href="../servicios/diseno-web.html" class="related-card">
+              <h4>Nuestro servicio de Diseño Web</h4>
+              <p>Diseños UI/UX que convierten visitantes en clientes.</p>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo"><span class="logo-mark">A</span><span class="logo-text">C-Consulting</span></a>
+          <p>Transformamos ideas en soluciones digitales que generan resultados reales.</p>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/company/118674051" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+            <a href="https://twitter.com/consulting_26" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">𝕏</a>
+            <a href="https://www.instagram.com/acconsulting_cloud" target="_blank" rel="noopener noreferrer" aria-label="Instagram">⊕</a>
+            <a href="https://github.com/angelclavijo939" target="_blank" rel="noopener noreferrer" aria-label="GitHub">⌥</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Servicios</h4>
+          <a href="../servicios/diseno-web.html">Diseño Web</a>
+          <a href="../servicios/desarrollo-software.html">Desarrollo de Software</a>
+          <a href="../servicios/servicios-ia.html">Servicios de IA</a>
+          <a href="../servicios/marketing-digital.html">Marketing Digital</a>
+          <a href="../servicios/escritura-traduccion.html">Escritura y Traducción</a>
+          <a href="../servicios/negocios.html">Consultoría de Negocios</a>
+        </div>
+        <div class="footer-links">
+          <h4>Empresa</h4>
+          <a href="../index.html#quien-soy">Quién soy</a>
+          <a href="../index.html#blog">Blog</a>
+          <a href="../contacto.html">Contacto</a>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Novedades en diseño y tecnología.</p>
+          <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+            <input type="email" placeholder="tu@email.com" required />
+            <button type="submit" class="btn btn-primary">Suscribir</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 AC-Consulting. Todos los derechos reservados.</p>
+        <p>Contacto legal: <a href="mailto:hola@ac-consulting.cloud">hola@ac-consulting.cloud</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" id="waFloat" href="https://wa.me/573112241803?text=Hola%20AC-Consulting%2C%20quiero%20una%20cotización" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+  <script>
+    (function() {
+      var p1 = '57311'; var p2 = '224'; var p3 = '1803';
+      var wa = document.getElementById('waFloat');
+      if (wa) wa.href = 'https://wa.me/' + p1 + p2 + p3 + '?text=Hola%20AC-Consulting%2C%20quiero%20una%20cotización';
+    })();
+  </script>
+  <script src="../scripts.js"></script>
+</body>
+</html>
