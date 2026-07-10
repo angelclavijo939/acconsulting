@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="icon" href="/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog AC-Consulting | Artículos sobre IA, SEO técnico y desarrollo web</title>
+  <meta name="description" content="Blog de AC-Consulting: artículos educativos sobre inteligencia artificial, SEO técnico, diseño web, automatización y desarrollo de software. Estrategias y guías prácticas para empresas colombianas." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ac-consulting.cloud/blog/" />
+  <meta property="og:title" content="Blog AC-Consulting | Estrategias de IA, SEO y Desarrollo Web" />
+  <meta property="og:description" content="Artículos educativos sobre IA, SEO técnico, diseño web responsivo, automatización inteligente y desarrollo de software a medida." />
+  <meta property="og:url" content="https://ac-consulting.cloud/blog/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://ac-consulting.cloud/images/og-image-blog.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Blog AC-Consulting | Estrategias de IA, SEO y Desarrollo Web" />
+  <meta name="twitter:description" content="Artículos educativos sobre IA, SEO técnico, diseño web y automatización inteligente." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Blog AC-Consulting",
+    "description": "Artículos educativos sobre inteligencia artificial, SEO técnico, diseño web, automatización y desarrollo de software.",
+    "url": "https://ac-consulting.cloud/blog/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "AC-Consulting",
+      "url": "https://ac-consulting.cloud",
+      "logo": { "@type": "ImageObject", "url": "https://ac-consulting.cloud/logo.png" }
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "El futuro de la IA generativa en los negocios de 2026",
+          "url": "https://ac-consulting.cloud/blog/futuro-ia-generativa-negocios.html",
+          "description": "Tendencias y aplicaciones de IA generativa para empresas en 2026. Cómo implementar ChatGPT, Claude y LLaMA en tu negocio."
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "SEO técnico: cómo triplicar el tráfico orgánico en 90 días",
+          "url": "https://ac-consulting.cloud/blog/seo-tecnico-triplicar-trafico-organico-90-dias.html",
+          "description": "Estrategias de SEO técnico con resultados medibles. Cómo pasar de 0 a 300+ leads/mes en 90 días."
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Diseño web responsivo: qué es y por qué tu sitio lo necesita en 2025",
+          "url": "https://ac-consulting.cloud/blog/diseno-web-responsivo.html",
+          "description": "Guía completa sobre diseño responsivo. Cómo tu sitio web se adapta perfectamente a móvil, tablet y desktop."
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "SEO técnico y diseño web: cómo optimizar tu sitio para Google",
+          "url": "https://ac-consulting.cloud/blog/seo-tecnico-diseno-web.html",
+          "description": "Conexión entre SEO técnico y diseño web. Core Web Vitals, mobile-first indexing, velocidad de carga."
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Agencia de diseño web en Bogotá: cómo elegir la mejor en 2025",
+          "url": "https://ac-consulting.cloud/blog/agencia-diseno-web-bogota.html",
+          "description": "Guía para seleccionar una agencia de diseño web en Bogotá. Criterios, presupuesto y preguntas clave."
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Desarrollo de software a medida en Colombia: guía completa 2025",
+          "url": "https://ac-consulting.cloud/blog/desarrollo-software-a-medida-colombia.html",
+          "description": "Todo lo que necesitas saber sobre desarrollo de software personalizado en Colombia. Stack moderno, agencias confiables."
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "Diseño UX/UI que aumenta conversiones 30-50%: guía completa",
+          "url": "https://ac-consulting.cloud/blog/ux-ui-conversiones.html",
+          "description": "Cómo diseñar experiencias que convierten. Wireframes, psicología del color, CTAs efectivos."
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "Automatización inteligente: ahorra 20 horas semanales en tu empresa",
+          "url": "https://ac-consulting.cloud/blog/automatizacion-inteligente-ahorra-20-horas-semanales.html",
+          "description": "Cómo implementar automatización con IA para reducir trabajo manual. RPA, chatbots, flujos inteligentes."
+        }
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background: #f9f9f9; }
+    
+    header {
+      background: linear-gradient(135deg, #001240 0%, #0D1B2A 100%);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    
+    nav {
+      background: #001240;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+    
+    nav a:hover { color: #00C9FF; }
+    
+    .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+    
+    h1 { font-size: 32px; margin-bottom: 10px; }
+    
+    .subtitle { font-size: 16px; opacity: 0.9; }
+    
+    .categories {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 30px 0;
+    }
+    
+    .category-tag {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    
+    .category-tag:hover {
+      background: #00C9FF;
+      transform: scale(1.05);
+    }
+    
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin: 50px 0;
+    }
+    
+    .blog-card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .blog-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+    
+    .blog-card-image {
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(135deg, #00C9FF 0%, #0D1B2A 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    
+    .blog-card-content {
+      padding: 20px;
+    }
+    
+    .blog-card-category {
+      display: inline-block;
+      background: #00C9FF;
+      color: white;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    
+    .blog-card h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #001240;
+      line-height: 1.4;
+    }
+    
+    .blog-card p {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+    
+    .blog-card-link {
+      display: inline-block;
+      color: #00C9FF;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+    
+    .blog-card-link:hover {
+      color: #0D1B2A;
+      text-decoration: underline;
+    }
+    
+    .related-services {
+      background: #f0f0f0;
+      padding: 40px 20px;
+      margin-top: 50px;
+      border-radius: 8px;
+    }
+    
+    .related-services h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 22px;
+      color: #001240;
+    }
+    
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    
+    .service-card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 4px solid #00C9FF;
+      text-align: center;
+    }
+    
+    .service-card h3 {
+      color: #001240;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    
+    .service-card p {
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 15px;
+    }
+    
+    .service-card-link {
+      display: inline-block;
+      background: #00C9FF;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    
+    .service-card-link:hover {
+      background: #0D1B2A;
+    }
+    
+    footer {
+      background: #001240;
+      color: white;
+      padding: 40px 20px;
+      margin-top: 50px;
+      text-align: center;
+    }
+    
+    footer p { font-size: 13px; margin-bottom: 10px; }
+    
+    footer a {
+      color: #00C9FF;
+      text-decoration: none;
+    }
+    
+    footer a:hover { text-decoration: underline; }
+    
+    @media (max-width: 768px) {
+      h1 { font-size: 24px; }
+      .blog-grid { grid-template-columns: 1fr; }
+      nav a { margin: 0 10px; font-size: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container" style="display: flex; justify-content: center;">
+      <a href="/">Inicio</a>
+      <a href="/servicios/diseno-web.html">Diseño Web</a>
+      <a href="/servicios/servicios-ia.html">IA</a>
+      <a href="/servicios/marketing-digital.html">Marketing</a>
+      <a href="/blog/">Blog</a>
+      <a href="/contacto.html">Contacto</a>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container">
+      <h1>Blog AC-Consulting</h1>
+      <p class="subtitle">Artículos educativos sobre IA, SEO técnico, diseño web y automatización inteligente</p>
+      
+      <div class="categories">
+        <span class="category-tag">IA & Automatización</span>
+        <span class="category-tag">SEO Técnico</span>
+        <span class="category-tag">Diseño Web</span>
+        <span class="category-tag">Desarrollo Software</span>
+        <span class="category-tag">UX/UI</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="blog-grid">
+        <!-- Artículo 1: IA -->
+        <article class="blog-card">
+          <div class="blog-card-image">🤖</div>
+          <div class="blog-card-content">
+            <span class="blog-card-category">IA & GENERATIVA</span>
+            <h3>El futuro de la IA generativa en los negocios de 2026</h3>
+            <p>Tendencias y aplicaciones de IA generativa para empresas. Cómo implementar ChatGPT, Claude y LLaMA en tu negocio.</p>
+            <a href="/blog/futuro-ia-generativa-negocios.html" class="blog-card-link">Leer artículo →</a>
+          </div>
+        </article>
+
+        <!-- Artículo 2: SEO Técnico -->
+        <article class="blog-card">
+          <div class="blog-card-image">📈</div>
+          <div class="blog-card-content">
+            <span class="blog-card-category">SEO TÉCNICO</span>
+            <h3>SEO técnico: cómo triplicar el tráfico orgánico en 90 días</h3>
+            <p>Estrategias de SEO técnico con resultados medibles. Cómo pasar de 0 a 300+ leads/mes en 90 días con IA.</p>
+            <a href="/blog/seo-tecnico-triplicar-trafico-organico-90-dias.html" class="blog-card-link">Leer artículo →</a>
+          </div>
+        </article>
+
+        <!-- Artículo 3: Diseño Responsivo -->
+        <article class="blog-card">
+          <div class="blog-card-image">📱</div>
+          <div class="blog-card-content">
+            <span class="blog-card-category">DISEÑO WEB</span>
+            <h3>Diseño web responsivo: qué es y por qué lo necesitas en 2025</h3>
+            <p>Guía completa sobre diseño responsivo. Cómo tu sitio web se adapta perfectamente a móvil, tablet y desktop.</p>
+            <a href="/blog/diseno-web-responsivo.html" class="blog-card-link">Leer artículo →</a>
+          </div>
+        </article>
+
+        <!-- Artículo 4: SEO + Diseño -->
+        <article class="blog-card">
+          <div class="blog-card-image">⚙️</div>
+          <div class="blog-card-content">
+            <span class="blog-card-category">SEO TÉCNICO</span>
+            <h3>SEO técnico y diseño web: cómo optimizar tu sitio para Google</h3>
+            <p>Conexión entre SEO técnico y diseño web. Core Web Vitals, mobile-first indexing, velocidad de carga.</p>
+            <a href="/blog/seo-tecnico-diseno-web.html" class="blog-card-link">Leer artículo →</a>
+          </div>
+        </article>
+
+        <!-- Artículo 5: Agencia Diseño Web Bogotá -->
+        <article class="blog-card">
+          <div class="blog-card-image">🏢</div>
+          <div class="blog-card-content">
+            <span class="blog-card-category">DISEÑO WEB</span>
+            <h3>Agencia de diseño web en Bogotá: cómo elegir la mejor en 2025</h3>
+            <p>Guía para seleccionar una agencia de diseño web en Bogotá. Criterios, presupuesto y preguntas clave para tomar la mejor decisión.</p>
+            <a href="/blog/agencia-diseno-web-bogota.html" class="blog-card-link">Leer artículo →</a>
+          </div>
+        </article>
+
+        <!-- Artículo 6: Desarrollo Software Colombia -->
+        <article class="blog-card">
+          <div class="blog-card-image">💻</div>
+          <div class="blog-card-content">
+            <span class="blog-card-category">DESARROLLO SOFTWARE</span>
+            <h3>Desarrollo de software a medida en Colombia: guía completa 2025</h3>
+            <p>Todo lo que necesitas saber sobre desarrollo personalizado. Stack moderno, agencias confiables, costos y timeline realista.</p>
+            <a href="/blog/desarrollo-software-a-medida-colombia.html" class="blog-card-link">Leer artículo →</a>
+          </div>
+        </article>
+
+        <!-- Artículo 7: UX/UI Conversiones -->
+        <article class="blog-card">
+          <div class="blog-card-image">✨</div>
+          <div class="blog-card-content">
+            <span class="blog-card-category">UX/UI</span>
+            <h3>Diseño UX/UI que aumenta conversiones 30-50%: guía completa</h3>
+            <p>Cómo diseñar experiencias que convierten. Wireframes, psicología del color, CTAs efectivos, pruebas que funcionan.</p>
+            <a href="/blog/ux-ui-conversiones.html" class="blog-card-link">Leer artículo →</a>
+          </div>
+        </article>
+
+        <!-- Artículo 8: Automatización -->
+        <article class="blog-card">
+          <div class="blog-card-image">⚡</div>
+          <div class="blog-card-content">
+            <span class="blog-card-category">AUTOMATIZACIÓN</span>
+            <h3>Automatización inteligente: ahorra 20 horas semanales en tu empresa</h3>
+            <p>Cómo implementar automatización con IA para reducir trabajo manual. RPA, chatbots, flujos inteligentes con ROI medible.</p>
+            <a href="/blog/automatizacion-inteligente-ahorra-20-horas-semanales.html" class="blog-card-link">Leer artículo →</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Sección de Servicios Relacionados -->
+      <section class="related-services">
+        <h2>¿Necesitas implementar lo que aprendes en el blog?</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <h3>🎨 Diseño Web</h3>
+            <p>Sitios responsivos y optimizados para conversión. WordPress, Webflow, Next.js.</p>
+            <a href="/servicios/diseno-web.html" class="service-card-link">Ver servicio</a>
+          </div>
+          <div class="service-card">
+            <h3>🤖 Servicios de IA</h3>
+            <p>Chatbots, automatización, fine-tuning. Integración con tus sistemas.</p>
+            <a href="/servicios/servicios-ia.html" class="service-card-link">Ver servicio</a>
+          </div>
+          <div class="service-card">
+            <h3>📈 Marketing Digital</h3>
+            <p>SEO técnico, Google Ads, redes sociales, AI Search optimization.</p>
+            <a href="/servicios/marketing-digital.html" class="service-card-link">Ver servicio</a>
+          </div>
+          <div class="service-card">
+            <h3>💻 Desarrollo Software</h3>
+            <p>Apps web, APIs, e-commerce. Python, JavaScript, React, Next.js.</p>
+            <a href="/servicios/desarrollo-software.html" class="service-card-link">Ver servicio</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><strong>AC-Consulting</strong> | Agencia Tech & IA para startups y empresas</p>
+      <p>Bogotá, Colombia | <a href="mailto:hola@ac-consulting.cloud">hola@ac-consulting.cloud</a> | <a href="https://wa.me/573112241803">WhatsApp</a></p>
+      <p>© 2026 AC-Consulting. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
