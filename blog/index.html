@@ -18,6 +18,10 @@
   <meta name="twitter:title" content="Blog AC-Consulting | Estrategias de IA, SEO y Desarrollo Web" />
   <meta name="twitter:description" content="Artículos educativos sobre IA, SEO técnico, diseño web y automatización inteligente." />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -96,219 +100,405 @@
   </script>
 
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background: #f9f9f9; }
-    
-    header {
-      background: linear-gradient(135deg, #001240 0%, #0D1B2A 100%);
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
+    :root {
+      --cream: #FAF5EC;
+      --cream-deep: #F2E9D8;
+      --paper: #FFFDF9;
+      --espresso: #2A1E14;
+      --espresso-soft: #4A3826;
+      --terracotta: #C1602E;
+      --terracotta-deep: #9C4A21;
+      --gold: #C99A44;
+      --ink-muted: #6B5B49;
+      --line: rgba(42, 30, 20, 0.12);
+      --shadow-warm: 0 12px 32px rgba(42, 30, 20, 0.10);
     }
-    
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      line-height: 1.65;
+      color: var(--espresso-soft);
+      background: var(--cream);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Cormorant Garamond', serif;
+      color: var(--espresso);
+      font-weight: 600;
+    }
+
+    a { color: inherit; }
+
+    .container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+    /* ---------- NAV ---------- */
     nav {
-      background: #001240;
-      padding: 15px 0;
+      background: var(--paper);
+      border-bottom: 1px solid var(--line);
+      padding: 18px 0;
       position: sticky;
       top: 0;
       z-index: 100;
+      backdrop-filter: blur(6px);
     }
-    
+
+    nav .container {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
     nav a {
-      color: white;
       text-decoration: none;
-      margin: 0 20px;
+      color: var(--espresso-soft);
       font-size: 14px;
-      transition: color 0.3s;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      padding: 8px 16px;
+      border-radius: 999px;
+      transition: background 0.25s ease, color 0.25s ease;
     }
-    
-    nav a:hover { color: #00C9FF; }
-    
-    .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
-    
-    h1 { font-size: 32px; margin-bottom: 10px; }
-    
-    .subtitle { font-size: 16px; opacity: 0.9; }
-    
+
+    nav a:hover {
+      background: var(--cream-deep);
+      color: var(--terracotta-deep);
+    }
+
+    /* ---------- HERO ---------- */
+    header {
+      position: relative;
+      padding: 96px 24px 80px;
+      text-align: center;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 15% 20%, rgba(193, 96, 46, 0.10), transparent 45%),
+        radial-gradient(circle at 85% 75%, rgba(201, 154, 68, 0.14), transparent 50%),
+        var(--cream);
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(var(--line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--line) 1px, transparent 1px);
+      background-size: 64px 64px;
+      opacity: 0.35;
+      mask-image: radial-gradient(ellipse at center, black 0%, transparent 72%);
+      pointer-events: none;
+    }
+
+    header .eyebrow {
+      display: inline-block;
+      font-family: 'Outfit', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--terracotta-deep);
+      margin-bottom: 22px;
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-size: clamp(40px, 6vw, 62px);
+      font-style: italic;
+      font-weight: 500;
+      line-height: 1.08;
+      margin-bottom: 18px;
+      position: relative;
+      z-index: 1;
+    }
+
+    header .subtitle {
+      font-size: 17px;
+      color: var(--ink-muted);
+      max-width: 560px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
     .categories {
       display: flex;
       gap: 10px;
       justify-content: center;
       flex-wrap: wrap;
-      margin: 30px 0;
+      margin-top: 40px;
+      position: relative;
+      z-index: 1;
     }
-    
+
     .category-tag {
-      background: rgba(255, 255, 255, 0.2);
-      padding: 8px 16px;
-      border-radius: 20px;
-      font-size: 13px;
-      cursor: pointer;
-      transition: all 0.3s;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      color: var(--espresso-soft);
+      padding: 9px 18px;
+      border-radius: 999px;
+      font-size: 12.5px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      cursor: default;
+      transition: all 0.3s ease;
     }
-    
+
     .category-tag:hover {
-      background: #00C9FF;
-      transform: scale(1.05);
+      background: var(--terracotta);
+      border-color: var(--terracotta);
+      color: white;
+      transform: translateY(-2px);
     }
-    
+
+    /* ---------- GRID ---------- */
+    main { padding-top: 72px; }
+
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+
+    .section-label span {
+      font-family: 'Outfit', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--terracotta-deep);
+      white-space: nowrap;
+    }
+
+    .section-label .rule {
+      height: 1px;
+      background: var(--line);
+      width: 100%;
+    }
+
     .blog-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-      margin: 50px 0;
+      gap: 28px;
+      margin-bottom: 64px;
     }
-    
+
     .blog-card {
-      background: white;
-      border-radius: 8px;
+      background: var(--paper);
+      border-radius: 14px;
       overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow-warm);
+      transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+      opacity: 0;
+      transform: translateY(16px);
+      animation: rise 0.6s ease forwards;
     }
-    
+
+    .blog-grid .blog-card:nth-child(1) { animation-delay: 0.02s; }
+    .blog-grid .blog-card:nth-child(2) { animation-delay: 0.08s; }
+    .blog-grid .blog-card:nth-child(3) { animation-delay: 0.14s; }
+    .blog-grid .blog-card:nth-child(4) { animation-delay: 0.20s; }
+    .blog-grid .blog-card:nth-child(5) { animation-delay: 0.26s; }
+    .blog-grid .blog-card:nth-child(6) { animation-delay: 0.32s; }
+    .blog-grid .blog-card:nth-child(7) { animation-delay: 0.38s; }
+    .blog-grid .blog-card:nth-child(8) { animation-delay: 0.44s; }
+
+    @keyframes rise {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     .blog-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(42, 30, 20, 0.16);
+      border-color: rgba(193, 96, 46, 0.35);
     }
-    
+
     .blog-card-image {
       width: 100%;
-      height: 200px;
-      background: linear-gradient(135deg, #00C9FF 0%, #0D1B2A 100%);
+      height: 168px;
+      background:
+        linear-gradient(160deg, var(--cream-deep) 0%, var(--cream) 100%);
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
-      font-size: 24px;
-      font-weight: bold;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid var(--line);
     }
-    
-    .blog-card-content {
-      padding: 20px;
+
+    .blog-card-image svg { width: 58px; height: 58px; position: relative; z-index: 1; }
+
+    .blog-card-image::before {
+      content: "";
+      position: absolute;
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(193, 96, 46, 0.14), transparent 70%);
+      top: -30px;
+      right: -20px;
     }
-    
+
+    .blog-card-content { padding: 24px; }
+
     .blog-card-category {
       display: inline-block;
-      background: #00C9FF;
-      color: white;
-      padding: 4px 10px;
-      border-radius: 4px;
-      font-size: 11px;
+      background: var(--cream-deep);
+      color: var(--terracotta-deep);
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 10.5px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      margin-bottom: 14px;
+    }
+
+    .blog-card h3 {
+      font-size: 21px;
       font-weight: 600;
       margin-bottom: 10px;
+      line-height: 1.32;
     }
-    
-    .blog-card h3 {
-      font-size: 18px;
-      margin-bottom: 10px;
-      color: #001240;
-      line-height: 1.4;
-    }
-    
+
     .blog-card p {
-      color: #666;
+      color: var(--ink-muted);
       font-size: 14px;
-      margin-bottom: 15px;
+      margin-bottom: 18px;
     }
-    
+
     .blog-card-link {
-      display: inline-block;
-      color: #00C9FF;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--terracotta-deep);
       text-decoration: none;
       font-weight: 600;
       font-size: 14px;
-      transition: color 0.3s;
+      transition: gap 0.25s ease, color 0.25s ease;
     }
-    
+
     .blog-card-link:hover {
-      color: #0D1B2A;
-      text-decoration: underline;
+      gap: 10px;
+      color: var(--espresso);
     }
-    
+
+    /* ---------- SERVICES ---------- */
     .related-services {
-      background: #f0f0f0;
-      padding: 40px 20px;
-      margin-top: 50px;
-      border-radius: 8px;
+      background: var(--espresso);
+      padding: 56px 40px;
+      margin-bottom: 60px;
+      border-radius: 18px;
+      position: relative;
+      overflow: hidden;
     }
-    
+
+    .related-services::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 80% 0%, rgba(201, 154, 68, 0.18), transparent 55%);
+    }
+
     .related-services h2 {
       text-align: center;
-      margin-bottom: 30px;
-      font-size: 22px;
-      color: #001240;
+      margin-bottom: 36px;
+      font-size: 30px;
+      font-style: italic;
+      font-weight: 500;
+      color: var(--cream);
+      position: relative;
     }
-    
+
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+      position: relative;
     }
-    
+
     .service-card {
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      border-left: 4px solid #00C9FF;
-      text-align: center;
+      background: rgba(250, 245, 236, 0.06);
+      border: 1px solid rgba(250, 245, 236, 0.14);
+      padding: 24px;
+      border-radius: 12px;
+      text-align: left;
+      transition: background 0.3s ease, border-color 0.3s ease;
     }
-    
+
+    .service-card:hover {
+      background: rgba(250, 245, 236, 0.1);
+      border-color: rgba(201, 154, 68, 0.5);
+    }
+
     .service-card h3 {
-      color: #001240;
-      margin-bottom: 10px;
-      font-size: 16px;
+      color: var(--cream);
+      margin-bottom: 8px;
+      font-size: 18px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
-    
+
+    .service-card h3 svg { width: 20px; height: 20px; flex-shrink: 0; }
+
     .service-card p {
+      font-family: 'Outfit', sans-serif;
       font-size: 13px;
-      color: #666;
-      margin-bottom: 15px;
+      color: rgba(250, 245, 236, 0.68);
+      margin-bottom: 16px;
     }
-    
+
     .service-card-link {
       display: inline-block;
-      background: #00C9FF;
-      color: white;
-      padding: 8px 16px;
-      border-radius: 4px;
+      color: var(--gold);
       text-decoration: none;
       font-size: 13px;
       font-weight: 600;
-      transition: background 0.3s;
+      border-bottom: 1px solid rgba(201, 154, 68, 0.4);
+      padding-bottom: 2px;
+      transition: color 0.25s ease, border-color 0.25s ease;
     }
-    
+
     .service-card-link:hover {
-      background: #0D1B2A;
+      color: var(--cream);
+      border-color: var(--cream);
     }
-    
+
+    /* ---------- FOOTER ---------- */
     footer {
-      background: #001240;
-      color: white;
-      padding: 40px 20px;
-      margin-top: 50px;
+      background: var(--paper);
+      border-top: 1px solid var(--line);
+      color: var(--ink-muted);
+      padding: 44px 20px;
       text-align: center;
     }
-    
-    footer p { font-size: 13px; margin-bottom: 10px; }
-    
-    footer a {
-      color: #00C9FF;
-      text-decoration: none;
-    }
-    
+
+    footer p { font-size: 13px; margin-bottom: 8px; }
+
+    footer strong { color: var(--espresso); font-family: 'Cormorant Garamond', serif; font-size: 16px; }
+
+    footer a { color: var(--terracotta-deep); text-decoration: none; }
     footer a:hover { text-decoration: underline; }
-    
+
     @media (max-width: 768px) {
-      h1 { font-size: 24px; }
+      header { padding: 72px 20px 60px; }
+      header h1 { font-size: 34px; }
       .blog-grid { grid-template-columns: 1fr; }
-      nav a { margin: 0 10px; font-size: 12px; }
+      .related-services { padding: 40px 20px; }
+      nav a { font-size: 13px; padding: 6px 12px; }
     }
   </style>
 </head>
 <body>
   <nav>
-    <div class="container" style="display: flex; justify-content: center;">
+    <div class="container">
       <a href="/">Inicio</a>
       <a href="/servicios/diseno-web.html">Diseño Web</a>
       <a href="/servicios/servicios-ia.html">IA</a>
@@ -320,9 +510,10 @@
 
   <header>
     <div class="container">
-      <h1>Blog AC-Consulting</h1>
-      <p class="subtitle">Artículos educativos sobre IA, SEO técnico, diseño web y automatización inteligente</p>
-      
+      <span class="eyebrow">AC-Consulting Journal</span>
+      <h1>El blog de AC-Consulting</h1>
+      <p class="subtitle">Artículos educativos sobre IA, SEO técnico, diseño web y automatización inteligente para empresas que quieren crecer.</p>
+
       <div class="categories">
         <span class="category-tag">IA & Automatización</span>
         <span class="category-tag">SEO Técnico</span>
@@ -335,10 +526,26 @@
 
   <main>
     <div class="container">
+      <div class="section-label">
+        <span>Artículos recientes</span>
+        <div class="rule"></div>
+      </div>
+
       <div class="blog-grid">
         <!-- Artículo 1: IA -->
         <article class="blog-card">
-          <div class="blog-card-image">🤖</div>
+          <div class="blog-card-image">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="16" y="22" width="32" height="26" rx="6" stroke="#C1602E" stroke-width="2"/>
+              <circle cx="25" cy="34" r="3" fill="#C99A44"/>
+              <circle cx="39" cy="34" r="3" fill="#C99A44"/>
+              <path d="M25 42h14" stroke="#C1602E" stroke-width="2" stroke-linecap="round"/>
+              <path d="M32 22V12" stroke="#C1602E" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="32" cy="9" r="3" stroke="#C1602E" stroke-width="2"/>
+              <path d="M10 30l6 3v6l-6 3" stroke="#C99A44" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M54 30l-6 3v6l6 3" stroke="#C99A44" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
           <div class="blog-card-content">
             <span class="blog-card-category">IA & GENERATIVA</span>
             <h3>El futuro de la IA generativa en los negocios de 2026</h3>
@@ -349,7 +556,14 @@
 
         <!-- Artículo 2: SEO Técnico -->
         <article class="blog-card">
-          <div class="blog-card-image">📈</div>
+          <div class="blog-card-image">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 46V30M24 46V20M36 46V26M48 46V14" stroke="#C1602E" stroke-width="3" stroke-linecap="round"/>
+              <path d="M12 46h40" stroke="#4A3826" stroke-width="2" stroke-linecap="round"/>
+              <path d="M40 16l8-2 2 8" stroke="#C99A44" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 32l10-10 8 6 14-14" stroke="#C99A44" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
           <div class="blog-card-content">
             <span class="blog-card-category">SEO TÉCNICO</span>
             <h3>SEO técnico: cómo triplicar el tráfico orgánico en 90 días</h3>
@@ -360,7 +574,16 @@
 
         <!-- Artículo 3: Diseño Responsivo -->
         <article class="blog-card">
-          <div class="blog-card-image">📱</div>
+          <div class="blog-card-image">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="14" width="32" height="22" rx="2" stroke="#C1602E" stroke-width="2"/>
+              <path d="M8 30h32" stroke="#C1602E" stroke-width="2"/>
+              <rect x="44" y="18" width="14" height="26" rx="3" stroke="#C99A44" stroke-width="2"/>
+              <path d="M49 41h4" stroke="#C99A44" stroke-width="2" stroke-linecap="round"/>
+              <path d="M16 44h16" stroke="#4A3826" stroke-width="2" stroke-linecap="round"/>
+              <path d="M20 50h8" stroke="#4A3826" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
           <div class="blog-card-content">
             <span class="blog-card-category">DISEÑO WEB</span>
             <h3>Diseño web responsivo: qué es y por qué lo necesitas en 2025</h3>
@@ -371,7 +594,14 @@
 
         <!-- Artículo 4: SEO + Diseño -->
         <article class="blog-card">
-          <div class="blog-card-image">⚙️</div>
+          <div class="blog-card-image">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="26" cy="26" r="14" stroke="#C1602E" stroke-width="2"/>
+              <circle cx="26" cy="26" r="5" stroke="#C99A44" stroke-width="2"/>
+              <path d="M36 36l14 14" stroke="#4A3826" stroke-width="2" stroke-linecap="round"/>
+              <path d="M26 8v4M26 40v4M44 26h-4M12 26H8" stroke="#C1602E" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
           <div class="blog-card-content">
             <span class="blog-card-category">SEO TÉCNICO</span>
             <h3>SEO técnico y diseño web: cómo optimizar tu sitio para Google</h3>
@@ -382,7 +612,14 @@
 
         <!-- Artículo 5: Agencia Diseño Web Bogotá -->
         <article class="blog-card">
-          <div class="blog-card-image">🏢</div>
+          <div class="blog-card-image">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 50V22l18-10 18 10v28" stroke="#C1602E" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M14 50h36" stroke="#4A3826" stroke-width="2" stroke-linecap="round"/>
+              <rect x="26" y="36" width="12" height="14" stroke="#C99A44" stroke-width="2"/>
+              <path d="M20 28h4M40 28h4M20 36h4M40 36h4" stroke="#C1602E" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
           <div class="blog-card-content">
             <span class="blog-card-category">DISEÑO WEB</span>
             <h3>Agencia de diseño web en Bogotá: cómo elegir la mejor en 2025</h3>
@@ -393,7 +630,13 @@
 
         <!-- Artículo 6: Desarrollo Software Colombia -->
         <article class="blog-card">
-          <div class="blog-card-image">💻</div>
+          <div class="blog-card-image">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22 20L10 32l12 12" stroke="#C1602E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M42 20l12 12-12 12" stroke="#C1602E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M35 16l-6 32" stroke="#C99A44" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
           <div class="blog-card-content">
             <span class="blog-card-category">DESARROLLO SOFTWARE</span>
             <h3>Desarrollo de software a medida en Colombia: guía completa 2025</h3>
@@ -404,7 +647,14 @@
 
         <!-- Artículo 7: UX/UI Conversiones -->
         <article class="blog-card">
-          <div class="blog-card-image">✨</div>
+          <div class="blog-card-image">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="12" y="12" width="40" height="40" rx="4" stroke="#C1602E" stroke-width="2"/>
+              <circle cx="24" cy="26" r="4" stroke="#C99A44" stroke-width="2"/>
+              <path d="M18 42c1-6 5-9 6-9s5 3 6 9" stroke="#C99A44" stroke-width="2" stroke-linecap="round"/>
+              <path d="M36 24h10M36 32h10M36 40h6" stroke="#4A3826" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
           <div class="blog-card-content">
             <span class="blog-card-category">UX/UI</span>
             <h3>Diseño UX/UI que aumenta conversiones 30-50%: guía completa</h3>
@@ -415,7 +665,11 @@
 
         <!-- Artículo 8: Automatización -->
         <article class="blog-card">
-          <div class="blog-card-image">⚡</div>
+          <div class="blog-card-image">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M34 8L14 36h14l-2 20 20-28H32l2-20z" fill="#C1602E" fill-opacity="0.12" stroke="#C1602E" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+          </div>
           <div class="blog-card-content">
             <span class="blog-card-category">AUTOMATIZACIÓN</span>
             <h3>Automatización inteligente: ahorra 20 horas semanales en tu empresa</h3>
@@ -430,22 +684,34 @@
         <h2>¿Necesitas implementar lo que aprendes en el blog?</h2>
         <div class="services-grid">
           <div class="service-card">
-            <h3>🎨 Diseño Web</h3>
+            <h3>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="4" width="18" height="12" rx="1.5" stroke="#C99A44" stroke-width="1.6"/><path d="M8 20h8M12 16v4" stroke="#C99A44" stroke-width="1.6" stroke-linecap="round"/></svg>
+              Diseño Web
+            </h3>
             <p>Sitios responsivos y optimizados para conversión. WordPress, Webflow, Next.js.</p>
             <a href="/servicios/diseno-web.html" class="service-card-link">Ver servicio</a>
           </div>
           <div class="service-card">
-            <h3>🤖 Servicios de IA</h3>
+            <h3>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5" y="7" width="14" height="10" rx="2" stroke="#C99A44" stroke-width="1.6"/><circle cx="9.5" cy="12" r="1.2" fill="#C99A44"/><circle cx="14.5" cy="12" r="1.2" fill="#C99A44"/><path d="M12 7V4" stroke="#C99A44" stroke-width="1.6" stroke-linecap="round"/></svg>
+              Servicios de IA
+            </h3>
             <p>Chatbots, automatización, fine-tuning. Integración con tus sistemas.</p>
             <a href="/servicios/servicios-ia.html" class="service-card-link">Ver servicio</a>
           </div>
           <div class="service-card">
-            <h3>📈 Marketing Digital</h3>
+            <h3>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 18V13M9 18V9M14 18V11M19 18V5" stroke="#C99A44" stroke-width="1.8" stroke-linecap="round"/></svg>
+              Marketing Digital
+            </h3>
             <p>SEO técnico, Google Ads, redes sociales, AI Search optimization.</p>
             <a href="/servicios/marketing-digital.html" class="service-card-link">Ver servicio</a>
           </div>
           <div class="service-card">
-            <h3>💻 Desarrollo Software</h3>
+            <h3>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 7L3 12l5 5M16 7l5 5-5 5" stroke="#C99A44" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Desarrollo Software
+            </h3>
             <p>Apps web, APIs, e-commerce. Python, JavaScript, React, Next.js.</p>
             <a href="/servicios/desarrollo-software.html" class="service-card-link">Ver servicio</a>
           </div>
@@ -456,7 +722,8 @@
 
   <footer>
     <div class="container">
-      <p><strong>AC-Consulting</strong> | Agencia Tech & IA para startups y empresas</p>
+      <p><strong>AC-Consulting</strong></p>
+      <p>Agencia Tech & IA para startups y empresas</p>
       <p>Bogotá, Colombia | <a href="mailto:hola@ac-consulting.cloud">hola@ac-consulting.cloud</a> | <a href="https://wa.me/573112241803">WhatsApp</a></p>
       <p>© 2026 AC-Consulting. Todos los derechos reservados.</p>
     </div>
