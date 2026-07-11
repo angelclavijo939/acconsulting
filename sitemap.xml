@@ -92,24 +92,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
-  <url>
-    <loc>https://ac-consulting.cloud/recursos/ux-ui-conversiones.html</loc>
-    <lastmod>2026-06-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ac-consulting.cloud/recursos/automatizacion-inteligente-ahorra-20-horas-semanales.html</loc>
-    <lastmod>2026-06-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ac-consulting.cloud/recursos/futuro-ia-generativa-negocios.html</loc>
-    <lastmod>2026-06-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
   <!-- PÁGINAS LEGALES Y CONTACTO -->
   <url>

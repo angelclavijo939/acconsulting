@@ -13,6 +13,16 @@
       "source": "/recursos/automatizacion-inteligente-ahorra-20-horas-semanales.html",
       "destination": "/blog/automatizacion-inteligente-ahorra-20-horas-semanales.html",
       "permanent": true
+    },
+    {
+      "source": "/recursos/ux-ui-conversiones.html",
+      "destination": "/blog/ux-ui-conversiones.html",
+      "permanent": true
+    },
+    {
+      "source": "/recursos/futuro-ia-generativa-negocios.html",
+      "destination": "/blog/futuro-ia-generativa-negocios.html",
+      "permanent": true
     }
   ],
   "headers": [
