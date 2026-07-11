@@ -14,51 +14,81 @@ User-agent: Googlebot
 Allow: /
 Disallow: /private/
 Disallow: /_next/
+Disallow: /admin/
+Disallow: /schema-markup.html
 Disallow: /search?
 Disallow: /*?sort=
 
 # ===== CRAWLERS DE IA (PERMITIR ACCESO COMPLETO) =====
 User-agent: GPTBot
 Allow: /
+Disallow: /admin/
+Disallow: /schema-markup.html
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /admin/
+Disallow: /schema-markup.html
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /admin/
+Disallow: /schema-markup.html
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /admin/
+Disallow: /schema-markup.html
 
 User-agent: Claude-Web
 Allow: /
+Disallow: /admin/
+Disallow: /schema-markup.html
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /admin/
+Disallow: /schema-markup.html
 
 User-agent: CCBot
 Allow: /
+Disallow: /admin/
+Disallow: /schema-markup.html
 
 User-agent: anthropic-ai
 Allow: /
+Disallow: /admin/
+Disallow: /schema-markup.html
 
 User-agent: Applebot-Extended
 Allow: /
+Disallow: /admin/
+Disallow: /schema-markup.html
 
 User-agent: Bingbot
 Allow: /
+Disallow: /admin/
+Disallow: /schema-markup.html
 
 User-agent: YouBot
 Allow: /
+Disallow: /admin/
+Disallow: /schema-markup.html
 
 User-agent: Brave-Search-Web
 Allow: /
+Disallow: /admin/
+Disallow: /schema-markup.html
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /admin/
+Disallow: /schema-markup.html
 
 User-agent: FacebookBot
 Allow: /
+Disallow: /admin/
+Disallow: /schema-markup.html
 
 # ===== CRAWLERS DE IA (BLOQUEAR — scrapers agresivos) =====
 User-agent: Bytespider
@@ -72,6 +102,8 @@ User-agent: *
 Allow: /
 Disallow: /private/
 Disallow: /_next/
+Disallow: /admin/
+Disallow: /schema-markup.html
 Disallow: /.git/
 Disallow: /.env/
 Disallow: /package.json
