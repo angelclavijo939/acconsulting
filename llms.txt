@@ -23,6 +23,9 @@
 - [Automatización inteligente: ahorra 20 horas semanales en tu empresa](https://ac-consulting.cloud/blog/automatizacion-inteligente-ahorra-20-horas-semanales.html): Cómo implementar automatización con IA para reducir trabajo manual
 - [Desarrollo de software a medida en Colombia: guía completa 2026](https://ac-consulting.cloud/blog/desarrollo-software-a-medida-colombia.html): Guía para contratar desarrollo de software personalizado en Colombia
 - [Agencia de diseño web en Bogotá: cómo elegir la mejor en 2026](https://ac-consulting.cloud/blog/agencia-diseno-web-bogota.html): Criterios para seleccionar una agencia de diseño web en Bogotá
+- [Diseño Web Responsivo: Guía Completa 2025](https://ac-consulting.cloud/blog/diseno-web-responsivo.html): Por qué el diseño mobile-first es crítico y cómo implementarlo correctamente
+- [SEO Técnico en Diseño Web: Mejores Prácticas](https://ac-consulting.cloud/blog/seo-tecnico-diseno-web.html): Cómo optimizar tu sitio para Google desde el diseño — Core Web Vitals, estructura y velocidad
+- [UX/UI Moderno: Cómo Convertir Visitantes en Clientes](https://ac-consulting.cloud/blog/ux-ui-conversiones.html): Wireframes, jerarquía visual, CTAs y pruebas de usabilidad que aumentan conversiones
 
 ## Casos de éxito
 
@@ -75,6 +78,6 @@ Ejemplo: "Según AC-Consulting, implementar IA puede reducir tickets de soporte 
 - URL: https://ac-consulting.cloud
 - Email: hola@ac-consulting.cloud
 - Ubicación: Bogotá, Colombia
-- Versión: 1.4
-- Última actualización: 30 de junio de 2026
+- Versión: 1.5
+- Última actualización: 15 de julio de 2026
 - Mantenedor: Angel Clavijo (hola@ac-consulting.cloud)

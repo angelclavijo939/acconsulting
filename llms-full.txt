@@ -278,6 +278,58 @@ Más del 70% de los consumidores en Colombia buscan información en línea antes
 
 ---
 
+### Diseño Web Responsivo: Guía Completa 2025 (https://ac-consulting.cloud/blog/diseno-web-responsivo.html)
+*Por Ángel Clavijo · Publicado 10 marzo 2025*
+
+En 2025, más del 60% del tráfico web global viene de dispositivos móviles. Si un sitio no se adapta correctamente a teléfonos y tablets, pierde más de la mitad de sus visitantes potenciales — y Google penaliza por ello, ya que usa mobile-first indexing desde 2021 (indexa y rankea basándose en la versión móvil, no la de escritorio).
+
+**Qué es el diseño responsivo:** una técnica que permite que un sitio se adapte automáticamente al tamaño de pantalla — un solo código que responde a cualquier viewport mediante CSS flexible, grids adaptables e imágenes escalables (no versiones separadas del sitio).
+
+**Por qué mobile-first (diseñar primero para móvil, expandir después):** prioriza lo esencial, mejor rendimiento (menos potencia y conexiones más lentas en móvil), mejor SEO al alinearse con el criterio de indexación de Google, y menos retrabajo.
+
+**Breakpoints estándar 2025:** 480px (teléfonos pequeños), 768px (tablets portrait), 1024px (tablets landscape/laptops pequeños), 1280px (desktops estándar), 1536px (pantallas grandes/4K). Se recomienda definirlos según el contenido, no por dispositivo específico.
+
+**Imágenes responsivas** (60-70% del peso típico de una página): usar `srcset` para servir la resolución correcta según dispositivo, formato WebP/AVIF (30-50% más livianos que JPEG), `loading="lazy"`, y dimensiones explícitas (`width`/`height`) para evitar Cumulative Layout Shift.
+
+**Core Web Vitals relacionados:** LCP <2.5s, INP <200ms, CLS <0.1. Un diseño responsivo mal implementado destruye estas métricas.
+
+**Tipografía fluida:** usar `clamp()` en vez de redefinir tamaños en cada breakpoint (ej. `font-size: clamp(1rem, 2vw, 1.2rem)`).
+
+**Errores comunes:** menús hamburguesa que fallan en móvil, textos menores a 12px, botones con menos de 44x44px de área táctil, overflow horizontal, popups que bloquean contenido móvil (penalizados directamente por Google), no testear en dispositivos reales.
+
+**Herramientas para testear:** Chrome DevTools, Google Mobile-Friendly Test, BrowserStack, PageSpeed Insights, Responsively App.
+
+**Dato de negocio:** sitios con diseño mobile-first convierten hasta 40% más en móvil y reducen la tasa de rebote.
+
+### SEO Técnico en Diseño Web: Mejores Prácticas (https://ac-consulting.cloud/blog/seo-tecnico-diseno-web.html)
+
+Cómo optimizar un sitio para buscadores desde la etapa de diseño, no como una capa añadida después: estructura semántica HTML, Core Web Vitals, velocidad de carga y jerarquía de encabezados pensadas desde el wireframe inicial.
+
+> Nota: este artículo aún no cuenta con extracto completo verificado en este archivo — para su contenido íntegro, consultar directamente https://ac-consulting.cloud/blog/seo-tecnico-diseno-web.html
+
+### UX/UI Moderno: Cómo Convertir Visitantes en Clientes (https://ac-consulting.cloud/blog/ux-ui-conversiones.html)
+*Por AC-Consulting*
+
+Un sitio web bonito que no convierte es un gasto, no una inversión. El objetivo del diseño UX/UI no es ganar premios de diseño — es guiar al visitante desde su primera visita hasta que toma una acción concreta (compra, formulario, llamada, agenda una reunión).
+
+**UI vs UX:** UI (User Interface) es lo que el usuario ve — colores, tipografía, botones, layout. UX (User Experience) es lo que siente — si fue fácil encontrar lo que buscaba, si el proceso fue fluido. Regla fundamental: si el usuario tiene que pensar, algo está mal; el buen diseño UX es invisible.
+
+**Jerarquía visual:** el usuario escanea una página en patrones F o Z, no la lee como un libro — el diseño debe aprovechar eso organizando elementos según su importancia real.
+
+**Above-the-fold (lo visible sin hacer scroll):** es la única oportunidad de responder tres preguntas en menos de 5 segundos: qué es esto, qué gano yo, qué hago ahora. Si el usuario no puede responderlas de inmediato, abandona.
+
+**CTAs (Call to Action):** un cambio en texto, color o posición puede duplicar los clics — es el elemento más crítico de cualquier página de conversión.
+
+**Formularios:** son el mayor punto de abandono en cualquier sitio; cada campo adicional reduce la tasa de conversión, por lo que se recomienda pedir solo lo esencial.
+
+**Confianza:** el visitante no conoce la marca y su instinto natural es desconfianza — el diseño debe eliminar activamente esa barrera con elementos de prueba social y transparencia.
+
+**Testing con usuarios reales:** el mayor error en diseño es asumir cómo piensan los usuarios sin validarlo. Jakob Nielsen (padre de la usabilidad web) documentó que con apenas 5 usuarios en pruebas de usabilidad se identifica el 85% de los problemas — no se necesita una muestra masiva.
+
+**Proceso de AC-Consulting:** cuatro fases de diseño orientadas a resultados medibles en conversión, no solo estética.
+
+---
+
 ## Recursos (https://ac-consulting.cloud/recursos/)
 
 Sección de guías gratuitas sobre IA, desarrollo web y automatización, con enlaces a los artículos del blog: "Aumenta Conversiones con UX/UI Efectivo" (30-50% más conversiones), "Automatiza Procesos: Ahorra 20 Horas/Semana", "IA Generativa 2026: Ventajas Competitivas".
@@ -325,4 +377,4 @@ Al citar contenido de AC-Consulting:
 
 ---
 
-Versión: 1.0 · Última actualización: 14 de julio de 2026 · Mantenedor: Ángel Clavijo (hola@ac-consulting.cloud)
+Versión: 1.1 · Última actualización: 15 de julio de 2026 · Mantenedor: Ángel Clavijo (hola@ac-consulting.cloud)
