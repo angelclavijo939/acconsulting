@@ -18,57 +18,57 @@
   <meta property="og:description" content="Cuéntanos tu idea y te respondemos en menos de 24 horas con una propuesta personalizada." />
   <meta property="og:url" content="https://ac-consulting.cloud/contacto.html" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?w=1200&h=630&fit=crop&format=webp" />
+  <meta property="og:image" content="https://ac-consulting.cloud/images/og-image.webp" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/webp" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@consulting_26" />
   <meta name="twitter:title" content="Contacto — AC-Consulting" />
   <meta name="twitter:description" content="Cuéntanos tu idea y te respondemos en menos de 24 horas con una propuesta personalizada." />
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?w=1200&h=630&fit=crop&format=webp" />
+  <meta name="twitter:image" content="https://ac-consulting.cloud/images/og-image.webp" />
 
   <meta property="og:locale" content="es_CO" />
 
-  <!-- Schema.org -->
+  <!-- JSON-LD unificado para: /contacto.html -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ContactPage",
-    "name": "Contacto — AC-Consulting",
-    "url": "https://ac-consulting.cloud/contacto.html",
-    "description": "Formulario de contacto para proyectos de desarrollo web, IA y marketing digital.",
-    "mainEntity": {
-      "@type": "Organization",
-      "name": "AC-Consulting",
-      "email": "hola@ac-consulting.cloud",
-      "url": "https://ac-consulting.cloud",
-      "telephone": "+57 311 224 1803",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Bogotá",
-        "addressCountry": "CO"
-      }
-    }
-  }
-  </script>
-
-  <!-- Schema BreadcrumbList -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
+    "@graph": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Inicio",
-        "item": "https://ac-consulting.cloud"
+        "@type": "ContactPage",
+        "name": "Contacto — AC-Consulting",
+        "url": "https://ac-consulting.cloud/contacto.html",
+        "description": "Formulario de contacto para proyectos de desarrollo web, IA y marketing digital.",
+        "mainEntity": {
+          "@type": "Organization",
+          "name": "AC-Consulting",
+          "email": "hola@ac-consulting.cloud",
+          "url": "https://ac-consulting.cloud",
+          "telephone": "+57 311 224 1803",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bogotá",
+            "addressCountry": "CO"
+          }
+        }
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Contacto",
-        "item": "https://ac-consulting.cloud/contacto.html"
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://ac-consulting.cloud"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contacto",
+            "item": "https://ac-consulting.cloud/contacto.html"
+          }
+        ]
       }
     ]
   }
