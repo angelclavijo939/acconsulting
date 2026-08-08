@@ -1043,6 +1043,47 @@
     })();
   </script>
 
+  <!-- Controlar FAQ (acordeón expandible) -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const faqItems = document.querySelectorAll('.faq-item');
+      
+      faqItems.forEach(item => {
+        const button = item.querySelector('.faq-q');
+        const answer = item.querySelector('.faq-a');
+        
+        if (button) {
+          button.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Cerrar todas las demás FAQ
+            faqItems.forEach(otherItem => {
+              if (otherItem !== item) {
+                otherItem.classList.remove('active');
+                const otherAnswer = otherItem.querySelector('.faq-a');
+                if (otherAnswer) {
+                  otherAnswer.style.display = 'none';
+                }
+              }
+            });
+            
+            // Toggle la FAQ actual
+            item.classList.toggle('active');
+            if (answer) {
+              if (answer.style.display === 'none' || !answer.style.display) {
+                answer.style.display = 'block';
+                button.querySelector('span').textContent = '−';
+              } else {
+                answer.style.display = 'none';
+                button.querySelector('span').textContent = '+';
+              }
+            }
+          });
+        }
+      });
+    });
+  </script>
+
   <script src="scripts.js" defer>
 </body>
 
